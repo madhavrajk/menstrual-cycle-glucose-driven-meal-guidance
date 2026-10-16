@@ -80,7 +80,7 @@ Madhav owns the forecasting pipeline and the repo. The scaffold is built and tes
   - Count high-CV labels per participant (every participant should have ≥ 10 valid days).
   - Check symptom prevalence at the ≥ 3 threshold.
   - If a symptom is rarer than ~5%, propose a person-relative threshold.
-- [ ] **Mon, hand off to Ava.** Confirm `make cgm` works on her machine for the Step 1 replication.
+- [ ] **Mon, hand off to Ava.** Confirm `make cgm` works on Ava's machine for the Step 1 replication.
 - [x] **Tue, real baselines.** `make baselines` prints AUROC/AUPRC with CIs for all 5 targets. Commit `results/baselines_real.csv`, which holds aggregates only.
 - [ ] **Tue–Thu, Week 4 features early.** Add each one with a `_dev` past-baseline column (`features/rolling.py`):
   - Nighttime HR from minute-level heart rate, during the main sleep window.
