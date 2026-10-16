@@ -12,6 +12,15 @@ from mealguide.data.io import time_of_day
 
 READINGS_PER_DAY = 288
 MIN_COVERAGE = 0.70
+MGDL_PER_MMOL = 18.016
+# Dexcom reports 2.2-22.2 mmol/L or 40-400 mg/dL, so 30 separates the units cleanly.
+UNIT_CUTOFF = 30
+
+
+def to_mgdl(values: pd.Series) -> pd.Series:
+    """mcPHASES glucose is documented as mmol/L, but 2 participants have some mg/dL
+    readings (about 4% of rows). Convert everything to mg/dL; see docs/decisions.md."""
+    return values.where(values > UNIT_CUTOFF, values * MGDL_PER_MMOL)
 
 
 def mage(values: np.ndarray) -> float:
@@ -41,6 +50,7 @@ def daily_cgm_metrics(glucose: pd.DataFrame) -> pd.DataFrame:
     """glucose.csv rows -> one row per participant-day (Interval 1 only)."""
     g = glucose[glucose["study_interval"] == INTERVAL_1].copy()
     g = g.dropna(subset=["glucose_value"])
+    g["glucose_value"] = to_mgdl(g["glucose_value"])
     g["t"] = time_of_day(g["timestamp"])
     g = g.drop_duplicates(KEYS + ["t"]).sort_values(KEYS + ["t"])
 

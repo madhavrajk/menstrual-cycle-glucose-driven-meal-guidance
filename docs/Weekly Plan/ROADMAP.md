@@ -8,7 +8,7 @@ Dec 11 deadline don't move.
 
 | Week | Dates | Plan |
 |---|---|---|
-| 2 | Oct 7–15 | [Week Plan, Oct 7–14 (PDF)](Week%20Plan%2C%20Oct%207%E2%80%9314%20Sensing-Driven%20Meal%20Guidance.pdf), deadline extended to Oct 15 |
+| 2 | Oct 7–15 | [Week Plan, Oct 7–14 (PDF)](week02_oct07-14.pdf), deadline extended to Oct 15 |
 | 3 | Oct 16–22 | [week03_oct16-22.md](week03_oct16-22.md) |
 
 New weeks are added here as they're written.

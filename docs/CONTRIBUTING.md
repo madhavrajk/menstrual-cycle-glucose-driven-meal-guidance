@@ -26,6 +26,6 @@ Everyone generates processed files locally from their own raw copy. We share cod
 
 ## Weekly cadence
 
-- Each week's plan lives in `Weekly Plan/weekNN_<dates>.md`. Check off tasks there in your PRs.
+- Each week's plan lives in `docs/Weekly Plan/weekNN_<dates>.md`. Check off tasks there in your PRs.
 - Monday: async update (done / blocked). Wednesday: 30-minute review.
 - Decisions go in `docs/decisions.md` with the date.

@@ -18,14 +18,14 @@ The shared repo exists now. Work happens on branches with small PRs (see `docs/C
 
 ## Carry-overs from Oct 7–15
 
-Status of the [Oct 7–14 PDF plan](Week%20Plan%2C%20Oct%207%E2%80%9314%20Sensing-Driven%20Meal%20Guidance.pdf):
+Status of the [Oct 7–14 PDF plan](week02_oct07-14.pdf):
 
 - **Ava, done** (now in the repo under `scripts/step1_data/` and `docs/`):
   - Done: data dictionary, symptom check, loader, coverage report, per-day table, LH-anchored phases, and the Mira cross-tab (88% agreement where both exist).
   - Open: the one-page phase-rules note.
 - **Madhav, mostly done in code; needs a real-data run:**
   - Done: repo, synthetic dataset, daily CGM metrics, coverage rule, glucose target, LOSO harness with bootstrap CIs, persistence and base-rate baselines, and first Fitbit features. All are tested on synthetic data.
-  - Open: PhysioNet account, data use agreement, and download (not started), then running all of it on real data.
+  - Done Oct 15: PhysioNet access, verified download, and the real-data run (`results/baselines_real.csv`). Found and fixed mixed glucose units (see `docs/decisions.md`).
 - **Sneha, not started:** lit review, reference 2 fix, LLM options page, evidence table, card template, recipe schema, 15 recipes, and the FoodData Central check all carry into this week.
 - **Kickoff decisions:**
   - Interval scope is settled by the data: Interval 1.
@@ -66,22 +66,22 @@ Ava owns phase labels, which every "+phase" model reads. The Week 4 models need 
 
 Madhav owns the forecasting pipeline and the repo. The scaffold is built and tested on synthetic data. This week moves it to real data and starts the Week 4 features early.
 
-- [ ] **Thu Oct 15, data access (carry-over).** Create a PhysioNet account with your Columbia email, sign the mcPHASES data use agreement, and download the ZIP to `~/mcphases/data/raw/`. Tell the group the same day if the page asks for anything beyond the agreement.
+- [x] **Thu Oct 15, data access (carry-over).** Create a PhysioNet account with your Columbia email, sign the mcPHASES data use agreement, and download the ZIP to `~/mcphases/data/raw/`. Tell the group the same day if the page asks for anything beyond the agreement.
 - [ ] **Thu Oct 15, repo live.** Push, invite Ava and Sneha, and walk the team through it at the check-in.
-- [ ] **Fri, real-data shakedown.**
+- [x] **Fri, real-data shakedown.**
   - Run `make step1 && make cgm && make features`.
   - Check the **timestamp format** in `glucose.csv` and `heart_rate.csv`. `time_of_day()` assumes clock times like `HH:MM:SS`.
   - Check that the join on the 3-part key loses no rows.
-- [ ] **Fri, coverage rule.**
+- [x] **Fri, coverage rule.**
   - Check the 70% floor against Danne et al. 2017.
   - Look at how many valid days and participants survive, and loosen the floor if needed.
   - Record the result in `docs/decisions.md`.
-- [ ] **Mon, target sanity.**
+- [x] **Mon, target sanity.**
   - Count high-CV labels per participant (every participant should have ≥ 10 valid days).
   - Check symptom prevalence at the ≥ 3 threshold.
   - If a symptom is rarer than ~5%, propose a person-relative threshold.
 - [ ] **Mon, hand off to Ava.** Confirm `make cgm` works on her machine for the Step 1 replication.
-- [ ] **Tue, real baselines.** `make baselines` prints AUROC/AUPRC with CIs for all 5 targets. Commit `results/baselines_real.csv`, which holds aggregates only.
+- [x] **Tue, real baselines.** `make baselines` prints AUROC/AUPRC with CIs for all 5 targets. Commit `results/baselines_real.csv`, which holds aggregates only.
 - [ ] **Tue–Thu, Week 4 features early.** Add each one with a `_dev` past-baseline column (`features/rolling.py`):
   - Nighttime HR from minute-level heart rate, during the main sleep window.
   - HRV (`heart_rate_variability_details.rmssd`, nightly).

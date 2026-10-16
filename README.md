@@ -12,7 +12,7 @@ turns those forecasts into personalized, evidence-grounded meal guidance. It use
 | 2. Next-day forecasting | RQ1/RQ2: can a watch (+ phase, + glucose) forecast symptoms and high-variability glucose days? | Madhav | `src/mealguide/{cgm,features,models}/` |
 | 3. Meal guidance | RQ3: is a grounded LLM safer and more accurate than an ungrounded one? | Sneha | `src/mealguide/guidance/`, `knowledge/` |
 
-Plans: [Weekly Plan/ROADMAP.md](Weekly%20Plan/ROADMAP.md) · Decisions: [docs/decisions.md](docs/decisions.md) · How we work: [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)
+Plans: [docs/Weekly Plan/ROADMAP.md](docs/Weekly%20Plan/ROADMAP.md) · Decisions: [docs/decisions.md](docs/decisions.md) · How we work: [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)
 
 ## Data rules (PhysioNet data use agreement)
 
@@ -49,7 +49,7 @@ writes `results/baselines_real.csv`.
 ## Layout
 
 ```
-Weekly Plan/          weekly plans + ROADMAP
+docs/Weekly Plan/     weekly plans + ROADMAP
 docs/                 decisions, contributing, data dictionary, Step 1 notes
 scripts/step1_data/   Ava's Step 1 scripts (run via `make step1`)
 src/mealguide/

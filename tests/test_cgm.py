@@ -36,6 +36,14 @@ def test_daily_metrics_values_and_coverage():
     assert bool(m.loc[1, "cgm_valid"]) and not bool(m.loc[2, "cgm_valid"])
 
 
+def test_mixed_units_converted_to_mgdl():
+    mmol = _day(1, 1, [100 / 18.016] * 288)  # 5.55 mmol/L
+    mgdl = _day(2, 1, [100.0] * 288)
+    m = daily_cgm_metrics(pd.concat([mmol, mgdl])).set_index("id")
+    assert m.loc[1, "glucose_mean"] == pytest.approx(100)
+    assert m.loc[2, "glucose_mean"] == pytest.approx(100)
+
+
 def test_high_cv_is_top_third_of_own_days():
     cv = np.arange(1, 13, dtype=float)  # 12 valid days, CV 1..12
     df = pd.DataFrame({"id": 1, "study_interval": 2022, "day_in_study": range(1, 13),
