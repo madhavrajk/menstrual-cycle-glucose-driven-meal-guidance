@@ -23,7 +23,7 @@ New weeks are added here as they're written.
 | **7** · Nov 13–19 | 20 synthetic user profiles; dashboard skeleton | Forecast API `get_forecast(id, day)` + trigger logic (proactive / phase fallback / reactive) | LLM pipeline end to end: retrieval → LLM → FDC nutrition → code checks |
 | **8** · Nov 20–25 | Dashboard integration | Freeze Step 2 numbers; results tables; forecast panel | LLM evaluation: rule-based vs. ungrounded vs. grounded |
 | **9** · Nov 26–Dec 2 | Buffer (Thanksgiving). Synthetic demo data; report: data + Step 1 | Report: Step 2 | Report: Step 3 |
-| **10** · Dec 3–11 | Final report, slides, release review (no data anywhere in git history), then public repo or tagged release | same | same |
+| **10** · Dec 3–11 | Final report, slides, release review (confirm no data anywhere in git history), tagged release | same | same |
 
 ## Critical path
 
