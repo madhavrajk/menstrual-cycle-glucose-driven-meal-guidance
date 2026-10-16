@@ -52,11 +52,26 @@ def read_daily_table(synthetic: bool = False) -> pd.DataFrame:
 def time_of_day(ts: pd.Series) -> pd.Series:
     """Parse mcPHASES timestamps to a Timedelta since midnight.
 
-    Dates are de-identified (day_in_study), so timestamps are expected to be clock times
-    like "13:05:00". Full datetimes are also accepted. Verify on real data.
+    The dataset page doesn't document the format. Dates are de-identified (day_in_study),
+    so clock times like "13:05:00" are most likely. Also accepted: full datetimes, and
+    numbers of seconds since midnight. Unparseable values become NaT. If more than 1% fail,
+    this raises with examples so the format can be fixed in one place.
     """
-    s = ts.astype(str)
-    if s.str.fullmatch(r"\d{1,2}:\d{2}(:\d{2}(\.\d+)?)?").all():
-        return pd.to_timedelta(s.where(s.str.count(":") == 2, s + ":00"))
-    dt = pd.to_datetime(s, format="mixed")
-    return dt - dt.dt.normalize()
+    if pd.api.types.is_numeric_dtype(ts):
+        if ts.dropna().between(0, 86_400).all():
+            return pd.to_timedelta(ts, unit="s")
+        raise ValueError(f"Numeric timestamps not in seconds-of-day: {ts.head(3).tolist()}")
+
+    s = ts.astype("string").str.strip()
+    clock = s.str.fullmatch(r"\d{1,2}:\d{2}(:\d{2}(\.\d+)?)?").fillna(False)
+    if clock[s.notna()].all():
+        out = pd.to_timedelta(s.where(s.str.count(":") == 2, s + ":00"), errors="coerce")
+    else:
+        dt = pd.to_datetime(s, format="mixed", errors="coerce")
+        out = dt - dt.dt.normalize()
+
+    failed = out.isna() & s.notna()
+    if failed.mean() > 0.01:
+        raise ValueError(f"Could not parse {failed.mean():.1%} of timestamps, e.g. "
+                         f"{s[failed].head(3).tolist()}. Update data/io.py::time_of_day.")
+    return out

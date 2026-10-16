@@ -25,7 +25,7 @@ Status of the [Oct 7–14 PDF plan](Week%20Plan%2C%20Oct%207%E2%80%9314%20Sensin
   - Open: the one-page phase-rules note.
 - **Madhav, mostly done in code; needs a real-data run:**
   - Done: repo, synthetic dataset, daily CGM metrics, coverage rule, glucose target, LOSO harness with bootstrap CIs, persistence and base-rate baselines, and first Fitbit features. All are tested on synthetic data.
-  - Open: running all of it on real data.
+  - Open: PhysioNet account, data use agreement, and download (not started), then running all of it on real data.
 - **Sneha, not started:** lit review, reference 2 fix, LLM options page, evidence table, card template, recipe schema, 15 recipes, and the FoodData Central check all carry into this week.
 - **Kickoff decisions:**
   - Interval scope is settled by the data: Interval 1.
@@ -66,6 +66,7 @@ Ava owns phase labels, which every "+phase" model reads. The Week 4 models need 
 
 Madhav owns the forecasting pipeline and the repo. The scaffold is built and tested on synthetic data. This week moves it to real data and starts the Week 4 features early.
 
+- [ ] **Thu Oct 15, data access (carry-over).** Create a PhysioNet account with your Columbia email, sign the mcPHASES data use agreement, and download the ZIP to `~/mcphases/data/raw/`. Tell the group the same day if the page asks for anything beyond the agreement.
 - [ ] **Thu Oct 15, repo live.** Push, invite Ava and Sneha, and walk the team through it at the check-in.
 - [ ] **Fri, real-data shakedown.**
   - Run `make step1 && make cgm && make features`.
