@@ -1,0 +1,22 @@
+# Hooks use tools from requirements.txt, so run `pre-commit install` inside the venv.
+repos:
+  - repo: local
+    hooks:
+      - id: block-data-files
+        name: Block data files (PhysioNet DUA)
+        language: fail
+        entry: "Data files must not be committed. Keep them in data/ (ignored) or MCPHASES_HOME."
+        files: '\.(csv|tsv|zip|parquet|feather|pkl|pickle|xlsx|gz)$'
+        exclude: '^results/'  # aggregate metrics only; results/private/ is gitignored
+
+      - id: nbstripout
+        name: Strip notebook outputs (they can contain participant rows)
+        language: system
+        entry: nbstripout
+        files: '\.ipynb$'
+
+      - id: ruff
+        name: ruff
+        language: system
+        entry: ruff check --force-exclude
+        types: [python]

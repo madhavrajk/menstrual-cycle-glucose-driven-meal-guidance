@@ -1,0 +1,13 @@
+# Reviewers requested automatically on PRs. Uncomment Madhav's and Sneha's lines once
+# their GitHub usernames are filled in.
+
+/scripts/step1_data/       @avarose444
+/src/mealguide/phases/     @avarose444
+/docs/data_dictionary.md   @avarose444
+
+# /src/mealguide/cgm/       @MADHAV_GITHUB
+# /src/mealguide/features/  @MADHAV_GITHUB
+# /src/mealguide/models/    @MADHAV_GITHUB
+
+# /src/mealguide/guidance/  @SNEHA_GITHUB
+# /knowledge/               @SNEHA_GITHUB
