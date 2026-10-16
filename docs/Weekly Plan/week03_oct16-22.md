@@ -41,7 +41,7 @@ What Ava's Week 2 output changes:
 
 - [ ] Accept the GitHub invite. Clone the repo **outside OneDrive** if you like (`~/code/...`); only Madhav's copy lives in OneDrive.
 - [ ] Follow the README setup: venv outside OneDrive, `make setup`, then copy `.env.example` to `.env`.
-- [ ] Put your own mcPHASES zip in `~/mcphases/data/raw/` and set `MCPHASES_HOME=~/mcphases`.
+- [ ] Download mcPHASES from PhysioNet (ZIP or folder, either works), then run `make data SRC=~/Downloads/<download>`. It verifies checksums and installs the data under `~/mcphases`. Then delete the download.
 - [ ] Run `make test` and `make baselines SYNTHETIC=1` to confirm your setup works.
 - [ ] Run `make step1`, then `make baselines`. You now have every shared table locally; nobody sends files.
 - [ ] Ava: confirm your files in the team repo, then delete or archive `mira-cycle-analysis`.

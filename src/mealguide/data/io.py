@@ -1,10 +1,11 @@
-"""Read mcPHASES tables straight from the zip, or from data/synthetic/.
+"""Read mcPHASES tables from the raw zip, an extracted folder, or data/synthetic/.
 
-Both sources return the same columns, so downstream code doesn't care which one it got.
+All sources return the same columns, so downstream code doesn't care which one it got.
 """
 
 import zipfile
 from collections.abc import Iterator
+from contextlib import contextmanager
 from pathlib import Path
 
 import pandas as pd
@@ -19,25 +20,30 @@ def _zip_member(archive: zipfile.ZipFile, table: str) -> str:
     raise KeyError(f"{table}.csv not found in {archive.filename}")
 
 
-def read_table(table: str, synthetic: bool = False, usecols=None) -> pd.DataFrame:
+@contextmanager
+def _open(table: str, synthetic: bool):
     if synthetic:
-        return pd.read_csv(paths.SYNTHETIC / f"{table}.csv", usecols=usecols)
-    with zipfile.ZipFile(paths.raw_zip()) as archive:
-        with archive.open(_zip_member(archive, table)) as f:
-            return pd.read_csv(f, usecols=usecols)
+        yield paths.SYNTHETIC / f"{table}.csv"
+        return
+    source = paths.raw_source()
+    if source.suffix == ".zip":
+        with zipfile.ZipFile(source) as archive, archive.open(_zip_member(archive, table)) as f:
+            yield f
+    else:
+        yield source / f"{table}.csv"
+
+
+def read_table(table: str, synthetic: bool = False, usecols=None) -> pd.DataFrame:
+    with _open(table, synthetic) as f:
+        return pd.read_csv(f, usecols=usecols)
 
 
 def iter_table(
     table: str, synthetic: bool = False, usecols=None, chunksize: int = 2_000_000
 ) -> Iterator[pd.DataFrame]:
     """Chunked reader for the big minute-level tables (heart_rate, steps)."""
-    if synthetic:
-        yield from pd.read_csv(paths.SYNTHETIC / f"{table}.csv", usecols=usecols,
-                               chunksize=chunksize)
-        return
-    with zipfile.ZipFile(paths.raw_zip()) as archive:
-        with archive.open(_zip_member(archive, table)) as f:
-            yield from pd.read_csv(f, usecols=usecols, chunksize=chunksize)
+    with _open(table, synthetic) as f:
+        yield from pd.read_csv(f, usecols=usecols, chunksize=chunksize)
 
 
 def read_daily_table(synthetic: bool = False) -> pd.DataFrame:

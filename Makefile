@@ -13,12 +13,17 @@ endif
 STEP1_HOME = $(shell $(PY) -c "from mealguide import paths; print(paths.HOME)")
 STEP1 = "$(CURDIR)/scripts/step1_data"
 
-.PHONY: setup synthetic step1 cgm features baselines test lint
+.PHONY: setup data synthetic step1 cgm features baselines test lint
 
 setup:
 	$(PY) -m pip install -r requirements.txt
 	$(PY) -m pip install -e .
 	pre-commit install
+
+# One-time: verify the PhysioNet download and install it under MCPHASES_HOME.
+data:
+	@test -n "$(SRC)" || (echo 'Usage: make data SRC=<path to download (zip or folder)>' && exit 1)
+	$(PY) -m mealguide.setup_data "$(SRC)"
 
 synthetic data/synthetic/glucose.csv:
 	$(PY) -m mealguide.synthetic

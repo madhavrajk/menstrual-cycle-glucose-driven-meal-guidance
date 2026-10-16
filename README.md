@@ -28,8 +28,8 @@ Plans: [docs/Weekly Plan/ROADMAP.md](docs/Weekly%20Plan/ROADMAP.md) · Decisions
 python3.12 -m venv ~/.venvs/meal-guidance      # outside OneDrive
 source ~/.venvs/meal-guidance/bin/activate
 make setup                                     # pinned deps + editable install + pre-commit hook
-cp .env.example .env                           # then set MCPHASES_HOME
-mkdir -p ~/mcphases/data/raw                   # put the mcPHASES zip here
+cp .env.example .env                           # data lives in ~/mcphases (outside OneDrive)
+make data SRC=~/Downloads/<your mcPHASES download>   # zip or folder; verifies checksums, installs it
 ```
 
 ## Run

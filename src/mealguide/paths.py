@@ -25,8 +25,15 @@ SYNTHETIC = REPO_ROOT / "data" / "synthetic"
 RESULTS = REPO_ROOT / "results"
 
 
-def raw_zip() -> Path:
+def raw_source() -> Path:
+    """The mcPHASES zip in data/raw/, or else an extracted folder inside data/raw/."""
     zips = sorted(RAW.glob("*.zip"))
-    if not zips:
-        raise FileNotFoundError(f"No mcPHASES zip in {RAW}. Set MCPHASES_HOME in .env.")
-    return zips[0]
+    if zips:
+        return zips[0]
+    marker = next(iter(sorted(RAW.rglob("hormones_and_selfreport.csv"))), None)
+    if marker:
+        return marker.parent
+    raise FileNotFoundError(
+        f"No mcPHASES data in {RAW}.\n"
+        f"  Run: make data SRC=<path to your PhysioNet download (zip or folder)>\n"
+        f"  Data location comes from MCPHASES_HOME in .env (currently {HOME}).")
