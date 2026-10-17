@@ -1,5 +1,4 @@
-# Reviewers requested automatically on PRs. Uncomment Sneha's lines once
-# Sneha's GitHub username is filled in.
+# Reviewers requested automatically on PRs.
 
 /scripts/step1_data/       @avarose444
 /src/mealguide/phases/     @avarose444
@@ -9,5 +8,5 @@
 /src/mealguide/features/   @madhavrajk
 /src/mealguide/models/     @madhavrajk
 
-# /src/mealguide/guidance/  @SNEHA_GITHUB
-# /knowledge/               @SNEHA_GITHUB
+/src/mealguide/guidance/  @sb4343
+/knowledge/               @sb4343
