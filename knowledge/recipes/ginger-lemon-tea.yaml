@@ -1,0 +1,44 @@
+id: ginger-lemon-tea
+name: Fresh ginger-lemon tea
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 3
+total_time_min: 13
+servings: 1
+ingredients:
+- name: Fresh ginger, sliced
+  grams: 10
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Water
+  grams: 250
+  fdc_query: Beverages, water, tap, drinking
+  fdc_id: 173647
+  fdc_description: Beverages, water, tap, drinking
+  fdc_verified: false
+- name: Lemon juice
+  grams: 10
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+- name: Maple syrup
+  grams: 7
+  fdc_query: Syrups, maple
+  fdc_id: 169661
+  fdc_description: Syrups, maple
+  fdc_verified: false
+evidence_tags:
+- ginger
+- vitamin_c
+- low_sodium
+steps:
+- Simmer sliced ginger in water for 10 minutes.
+- Strain, then stir in lemon juice and maple syrup.
+notes: The easiest way to add ginger on a predicted cramps day without changing meals.

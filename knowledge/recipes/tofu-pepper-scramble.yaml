@@ -1,0 +1,60 @@
+id: tofu-pepper-scramble
+name: Tofu scramble with red pepper and spinach
+meal_type: breakfast
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- soy
+active_time_min: 12
+total_time_min: 12
+servings: 1
+ingredients:
+- name: Firm tofu, calcium-set
+  grams: 150
+  fdc_query: Tofu, raw, firm, prepared with calcium sulfate
+  fdc_id: 172475
+  fdc_description: Tofu, raw, firm, prepared with calcium sulfate
+  fdc_verified: false
+- name: Red bell pepper
+  grams: 75
+  fdc_query: Peppers, sweet, red, raw
+  fdc_id: 170108
+  fdc_description: Peppers, sweet, red, raw
+  fdc_verified: false
+- name: Baby spinach
+  grams: 40
+  fdc_query: Spinach, raw
+  fdc_id: 168462
+  fdc_description: Spinach, raw
+  fdc_verified: false
+- name: Ground turmeric
+  grams: 1
+  fdc_query: Spices, turmeric, ground
+  fdc_id: 172231
+  fdc_description: Spices, turmeric, ground
+  fdc_verified: false
+- name: Olive oil
+  grams: 5
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Corn tortillas
+  grams: 52
+  fdc_query: Tortillas, ready-to-bake or -fry, corn
+  fdc_id: 175036
+  fdc_description: Tortillas, ready-to-bake or -fry, corn
+  fdc_verified: false
+evidence_tags:
+- iron
+- vitamin_c
+- calcium
+- protein_first
+steps:
+- Cook diced pepper in oil for 3 minutes.
+- Crumble in tofu with turmeric and cook 5 minutes.
+- Stir in spinach until wilted and serve in warm tortillas.
+notes: The pepper's vitamin C pairs with the plant iron in tofu and spinach. Calcium-set tofu is what
+  earns the calcium tag.

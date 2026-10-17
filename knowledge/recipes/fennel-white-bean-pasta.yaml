@@ -1,0 +1,66 @@
+id: fennel-white-bean-pasta
+name: Fennel and white bean pasta with parmesan
+meal_type: dinner
+diets:
+- omnivore
+- vegetarian
+allergens:
+- wheat
+- milk
+active_time_min: 15
+total_time_min: 25
+servings: 1
+ingredients:
+- name: Whole-wheat pasta, dry
+  grams: 75
+  fdc_query: Pasta, whole-wheat, dry
+  fdc_id: 168915
+  fdc_description: Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, dry
+  fdc_verified: true
+- name: Fennel bulb, sliced
+  grams: 120
+  fdc_query: Fennel, bulb, raw
+  fdc_id: 2747655
+  fdc_description: Fennel, bulb, raw
+  fdc_verified: false
+- name: Cannellini beans, no salt added, drained
+  grams: 100
+  fdc_query: Beans, white, mature seeds, cooked, boiled, without salt
+  fdc_id: 175203
+  fdc_description: Beans, white, mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Parmesan, grated
+  grams: 15
+  fdc_query: Cheese, parmesan, grated
+  fdc_id: 171247
+  fdc_description: Cheese, parmesan, grated
+  fdc_verified: false
+- name: Garlic
+  grams: 5
+  fdc_query: Garlic, raw
+  fdc_id: 1104647
+  fdc_description: Garlic, raw
+  fdc_verified: false
+- name: Lemon juice
+  grams: 10
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- fennel
+- calcium
+- magnesium
+- low_gi
+steps:
+- Cook pasta; save a little cooking water.
+- Sauté fennel and garlic in oil until soft and golden, about 8 minutes.
+- Add beans, pasta, and a splash of pasta water; finish with lemon and parmesan.
+notes: Fennel bulb is far below the fennel doses used in the cramp trials, so the card must say the trials
+  used supplements. Nutritional yeast replaces parmesan for a vegan version.

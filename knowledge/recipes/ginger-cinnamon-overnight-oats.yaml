@@ -1,0 +1,58 @@
+id: ginger-cinnamon-overnight-oats
+name: Ginger-cinnamon overnight oats
+meal_type: breakfast
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- soy
+active_time_min: 5
+total_time_min: 485
+servings: 1
+ingredients:
+- name: Rolled oats
+  grams: 50
+  fdc_query: Oats, regular and quick, not fortified, dry
+  fdc_id: 173904
+  fdc_description: Cereals, oats, regular and quick, not fortified, dry
+  fdc_verified: true
+- name: Fortified soy milk
+  grams: 200
+  fdc_query: Soymilk, original and vanilla, with added calcium, vitamins A and D
+  fdc_id: 172456
+  fdc_description: Soymilk, original and vanilla, with added calcium, vitamins A and D
+  fdc_verified: false
+- name: Chia seeds
+  grams: 10
+  fdc_query: Seeds, chia seeds, dried
+  fdc_id: 170554
+  fdc_description: Seeds, chia seeds, dried
+  fdc_verified: false
+- name: Fresh ginger, grated
+  grams: 5
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Ground cinnamon
+  grams: 2
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+- name: Banana, sliced
+  grams: 60
+  fdc_query: Bananas, raw
+  fdc_id: 173944
+  fdc_description: Bananas, raw
+  fdc_verified: false
+evidence_tags:
+- ginger
+- cinnamon
+- calcium
+steps:
+- Stir oats, soy milk, chia, ginger, and cinnamon together in a jar.
+- Cover and refrigerate overnight, at least 8 hours.
+- Top with banana before eating.
+notes: Calcium comes from the fortified soy milk; an unfortified milk loses the calcium tag.

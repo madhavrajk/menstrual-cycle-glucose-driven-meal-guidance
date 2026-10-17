@@ -1,0 +1,78 @@
+id: lemony-lentil-spinach-soup
+name: Lemony lentil and spinach soup
+meal_type: lunch
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 15
+total_time_min: 40
+servings: 2
+ingredients:
+- name: Dried brown lentils
+  grams: 120
+  fdc_query: Lentils, raw
+  fdc_id: 172420
+  fdc_description: Lentils, raw
+  fdc_verified: false
+- name: Baby spinach
+  grams: 100
+  fdc_query: Spinach, raw
+  fdc_id: 168462
+  fdc_description: Spinach, raw
+  fdc_verified: false
+- name: Carrot
+  grams: 120
+  fdc_query: Carrots, raw
+  fdc_id: 170393
+  fdc_description: Carrots, raw
+  fdc_verified: false
+- name: Onion
+  grams: 100
+  fdc_query: Onions, raw
+  fdc_id: 170000
+  fdc_description: Onions, raw
+  fdc_verified: false
+- name: Garlic
+  grams: 10
+  fdc_query: Garlic, raw
+  fdc_id: 1104647
+  fdc_description: Garlic, raw
+  fdc_verified: false
+- name: Fresh ginger, grated
+  grams: 8
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Low-sodium vegetable broth
+  grams: 600
+  fdc_query: Soup, vegetable broth, ready to serve, low sodium
+  fdc_id: 171583
+  fdc_description: Soup, vegetable broth, ready to serve
+  fdc_verified: false
+- name: Lemon juice
+  grams: 30
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- iron
+- vitamin_c
+- magnesium
+- ginger
+- low_sodium
+steps:
+- Soften onion, carrot, garlic, and ginger in oil for 5 minutes.
+- Add rinsed lentils and broth; simmer 25 minutes until tender.
+- Stir in spinach until wilted, then lemon juice just before serving.
+notes: Lemon goes in at the end so heat doesn't destroy its vitamin C. If no low-sodium broth match exists
+  in FoodData Central, use water plus herbs.

@@ -1,0 +1,34 @@
+id: glucose-food-order
+trigger:
+  target: unstable_glucose
+  fires_on:
+  - forecast
+claim: In small randomized trials of healthy adults, eating protein or vegetables before carbohydrate-rich
+  foods lowered the rise in blood sugar after the meal, compared with eating carbohydrates first or everything
+  mixed.
+allowed_wording: Starting meals with protein or vegetables can soften the rise in blood sugar afterward,
+  so each meal today pairs carbs with protein.
+food_tags:
+- protein_first
+foods:
+- eggs with toast
+- salad before pasta
+- chicken or tofu with rice
+research_dose: Same meal eaten in different orders, usually protein and vegetables first, then carbohydrates
+  about 10 minutes later
+population: 107 healthy adults aged about 20-37 across six small trials
+source:
+  citation: Systematic review of meal sequence and postprandial glucose in healthy adults. Clinical Nutrition
+    Research.
+  url: https://www.e-cnr.org/journal/view.php?number=403
+strength: low
+strength_reason: Small trials; short-term glucose only.
+cautions:
+- On predicted bloating days, pair with protein rather than high-fiber foods.
+- The effect was on single meals; no study showed it improves symptoms.
+conflicts_with:
+- bloating-sodium
+never_say:
+- this will prevent sugar crashes
+- stabilizes your hormones
+- any claim about diabetes risk

@@ -1,0 +1,70 @@
+id: black-bean-sweet-potato-tacos
+name: Black bean and sweet potato tacos
+meal_type: dinner
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 15
+total_time_min: 35
+servings: 1
+ingredients:
+- name: Black beans, no salt added, drained
+  grams: 130
+  fdc_query: Beans, black, mature seeds, cooked, boiled, without salt
+  fdc_id: 173735
+  fdc_description: Beans, black, mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Sweet potato, diced
+  grams: 150
+  fdc_query: Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)
+  fdc_id: 168482
+  fdc_description: Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)
+  fdc_verified: true
+- name: Corn tortillas
+  grams: 52
+  fdc_query: Tortillas, ready-to-bake or -fry, corn
+  fdc_id: 175036
+  fdc_description: Tortillas, ready-to-bake or -fry, corn
+  fdc_verified: false
+- name: Avocado
+  grams: 50
+  fdc_query: Avocados, raw, all commercial varieties
+  fdc_id: 171705
+  fdc_description: Avocados, raw, all commercial varieties
+  fdc_verified: false
+- name: Red cabbage, shredded
+  grams: 40
+  fdc_query: Cabbage, red, raw
+  fdc_id: 2346408
+  fdc_description: Cabbage, red, raw
+  fdc_verified: false
+- name: Lime juice
+  grams: 10
+  fdc_query: Lime juice, raw
+  fdc_id: 168156
+  fdc_description: Lime juice, raw
+  fdc_verified: false
+- name: Ground cumin
+  grams: 2
+  fdc_query: Spices, cumin seed
+  fdc_id: 170923
+  fdc_description: Spices, cumin seed
+  fdc_verified: false
+- name: Olive oil
+  grams: 5
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- iron
+- magnesium
+- vitamin_c
+- low_sodium
+steps:
+- Toss sweet potato with oil and cumin; roast at 220 °C for 25 minutes.
+- Warm the beans and tortillas.
+- Fill tortillas with beans, sweet potato, cabbage, and avocado; finish with lime.
+notes: High in fiber; not a first pick on predicted bloating days.

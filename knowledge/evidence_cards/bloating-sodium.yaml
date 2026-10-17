@@ -1,0 +1,32 @@
+id: bloating-sodium
+trigger:
+  target: bloating
+  fires_on:
+  - forecast
+  - logged
+claim: In a reanalysis of a large randomized diet trial, adults eating more sodium reported more bloating.
+  A high-fiber diet also increased bloating.
+allowed_wording: Saltier meals have been linked to more bloating, so today's plan leans lower in sodium.
+food_tags:
+- low_sodium
+foods:
+- home-cooked meals seasoned with herbs, citrus, garlic, or spices
+- fresh rather than processed or cured meats
+- low-sodium stock, sauces, and canned beans
+research_dose: Three sodium levels compared within high-fiber and low-fiber diets
+population: 412 adults with elevated blood pressure; not a menstrual study
+source:
+  citation: 'Peng AW et al. Effects of the DASH diet and sodium intake on bloating: results from the DASH-Sodium
+    trial. Am J Gastroenterol 2019.'
+  url: https://pubmed.ncbi.nlm.nih.gov/31206400/
+strength: very_low
+strength_reason: Not a menstrual study.
+cautions:
+- On predicted bloating days, pair carbohydrates with protein instead of high-fiber foods.
+- Sodium and fiber are computed in code from FoodData Central, never estimated by the LLM.
+conflicts_with:
+- glucose-food-order
+never_say:
+- cutting salt will stop bloating
+- this is water weight from your period
+- any sodium target

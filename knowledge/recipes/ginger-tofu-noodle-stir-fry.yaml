@@ -1,0 +1,72 @@
+id: ginger-tofu-noodle-stir-fry
+name: Ginger tofu stir-fry with rice noodles
+meal_type: dinner
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- soy
+- wheat
+active_time_min: 20
+total_time_min: 25
+servings: 1
+ingredients:
+- name: Firm tofu, calcium-set
+  grams: 150
+  fdc_query: Tofu, raw, firm, prepared with calcium sulfate
+  fdc_id: 172475
+  fdc_description: Tofu, raw, firm, prepared with calcium sulfate
+  fdc_verified: false
+- name: Broccoli
+  grams: 100
+  fdc_query: Broccoli, raw
+  fdc_id: 747447
+  fdc_description: Broccoli, raw
+  fdc_verified: false
+- name: Snap peas
+  grams: 80
+  fdc_query: Peas, edible-podded, raw
+  fdc_id: 170010
+  fdc_description: Peas, edible-podded, raw
+  fdc_verified: false
+- name: Fresh ginger, grated
+  grams: 8
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Garlic
+  grams: 5
+  fdc_query: Garlic, raw
+  fdc_id: 1104647
+  fdc_description: Garlic, raw
+  fdc_verified: false
+- name: Low-sodium soy sauce
+  grams: 10
+  fdc_query: Soy sauce, made from soy and wheat (shoyu), low sodium
+  fdc_id: 172473
+  fdc_description: Soy sauce made from soy and wheat (shoyu), low sodium
+  fdc_verified: false
+- name: Canola oil
+  grams: 8
+  fdc_query: Oil, canola
+  fdc_id: 748278
+  fdc_description: Oil, canola
+  fdc_verified: false
+- name: Cooked rice noodles
+  grams: 150
+  fdc_query: Rice noodles, cooked
+  fdc_id: 168914
+  fdc_description: Rice noodles, cooked
+  fdc_verified: false
+evidence_tags:
+- ginger
+- calcium
+- iron
+- protein_first
+steps:
+- Press and cube tofu; fry in oil until golden, about 6 minutes.
+- Add broccoli, snap peas, ginger, and garlic; stir-fry 4 minutes.
+- Toss with soy sauce and noodles.
+notes: Rice noodles keep it wheat-free if tamari replaces the soy sauce.

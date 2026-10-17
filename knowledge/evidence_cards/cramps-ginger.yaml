@@ -1,0 +1,33 @@
+id: cramps-ginger
+trigger:
+  target: cramps
+  fires_on:
+  - forecast
+  - logged
+claim: In a meta-analysis of four placebo-controlled trials, ginger powder taken in the first 3-4 days
+  of the period lowered pain scores in women with primary dysmenorrhea.
+allowed_wording: Some studies suggest ginger may ease period cramps, so this plan includes it.
+food_tags:
+- ginger
+foods:
+- fresh or ground ginger
+- ginger tea
+- stir-fries
+- soups
+- ginger in oats or smoothies
+research_dose: 750-2000 mg ginger powder a day, first 3-4 days of the cycle
+population: Young women with primary dysmenorrhea (painful periods with no underlying condition)
+source:
+  citation: Daily JW et al. Efficacy of ginger for alleviating the symptoms of primary dysmenorrhea. Pain
+    Medicine 2015;16(12):2243-2255. One author runs a supplement company.
+  url: https://academic.oup.com/painmedicine/article/16/12/2243/2460294
+strength: low
+strength_reason: Trials used supplement doses, not food.
+cautions:
+- 'Show the severe-pain prompt: see a clinician if pain is severe or stops daily activities.'
+- Ginger is not a replacement for pain medication a clinician has recommended.
+conflicts_with: []
+never_say:
+- ginger treats cramps
+- works as well as ibuprofen
+- any milligram dose
