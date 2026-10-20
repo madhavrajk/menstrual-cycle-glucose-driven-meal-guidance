@@ -46,11 +46,11 @@ ingredients:
   fdc_id: 169231
   fdc_description: Ginger root, raw
   fdc_verified: false
-- name: Low-sodium vegetable broth
+- name: Water
   grams: 600
-  fdc_query: Soup, vegetable broth, ready to serve, low sodium
-  fdc_id: 171583
-  fdc_description: Soup, vegetable broth, ready to serve
+  fdc_query: Beverages, water, tap, drinking
+  fdc_id: 173647
+  fdc_description: Beverages, water, tap, drinking
   fdc_verified: false
 - name: Lemon juice
   grams: 30
@@ -72,7 +72,8 @@ evidence_tags:
 - low_sodium
 steps:
 - Soften onion, carrot, garlic, and ginger in oil for 5 minutes.
-- Add rinsed lentils and broth; simmer 25 minutes until tender.
+- Add rinsed lentils and water; simmer 25 minutes until tender.
 - Stir in spinach until wilted, then lemon juice just before serving.
-notes: Lemon goes in at the end so heat doesn't destroy its vitamin C. If no low-sodium broth match exists
-  in FoodData Central, use water plus herbs.
+notes: Lemon goes in at the end so heat doesn't destroy its vitamin C. Water keeps it low in sodium; add
+  a bay leaf, thyme, or cumin for depth. Store-bought broth, even 'reduced sodium', adds several hundred
+  mg of sodium per serving.

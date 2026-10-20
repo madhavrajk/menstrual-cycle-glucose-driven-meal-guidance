@@ -101,14 +101,14 @@ Sneha builds the evidence base Step 3 depends on. This week clears the Week 2 li
 - [ ] **Fri, LLM data-handling options.**
   - One page comparing a local model, a zero-retention API, and sending only derived state.
   - Bring a recommendation to the Mon update, then email the instructor.
-- [ ] **Fri–Mon, evidence table.**
+- [x] **Fri–Mon, evidence table.**
   - Cover the four symptoms, glucose-aware planning, and iron during menses.
   - Give each the claim, best source, study type, and strength.
   - Mark weak or unsupported claims.
-- [ ] **Mon, evidence-card template + first 5 cards** in `knowledge/evidence_cards/`, as YAML.
-- [ ] **Mon, recipe schema.** Ingredients in grams with FDC IDs, dietary-pattern tags, allergens, cooking time, and meal type. Add a small validator test in `tests/`.
-- [ ] **Tue, first 15 recipes** in `knowledge/recipes/`, split across omnivore, vegetarian, and vegan.
-- [ ] **Tue–Wed, nutrition from code.** Get an FDC API key (into `.env`) and write `src/mealguide/guidance/nutrition.py`. Compute nutrients for 3 recipes.
+- [x] **Mon, evidence-card template + first 5 cards** in `knowledge/evidence_cards/`, as YAML.
+- [x] **Mon, recipe schema.** Ingredients in grams with FDC IDs, dietary-pattern tags, allergens, cooking time, and meal type. Add a small validator test in `tests/`.
+- [x] **Tue, first 15 recipes** in `knowledge/recipes/`, split across omnivore, vegetarian, and vegan.
+- [x] **Tue–Wed, nutrition from code.** Get an FDC API key (into `.env`) and write `src/mealguide/guidance/nutrition.py`. Compute nutrients for 3 recipes.
 
 **Done when** every planned guidance rule traces to a source or is marked unsupported, and nutrition for 3 recipes computes from code.
 
