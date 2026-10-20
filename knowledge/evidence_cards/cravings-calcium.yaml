@@ -1,0 +1,39 @@
+id: cravings-calcium
+trigger:
+  target: cravings
+  fires_on:
+  - forecast
+  - logged
+claim: In a large randomized trial of women with PMS, calcium supplements reduced food cravings along
+  with other premenstrual symptoms over three cycles. Separately, women eating more calcium from food
+  were less likely to develop PMS.
+allowed_wording: Some research links calcium to fewer premenstrual cravings, so this plan includes calcium-rich
+  foods.
+food_tags:
+- calcium
+foods:
+- yogurt
+- milk
+- cheese
+- fortified plant milks
+- calcium-set tofu
+- sardines or canned salmon with bones
+- kale
+- bok choy
+research_dose: 1200 mg elemental calcium a day (as calcium carbonate) for 3 cycles
+population: 497 women aged 18-45 with moderate to severe PMS; the food study was nurses in a long-term
+  US cohort
+source:
+  citation: Thys-Jacobs S et al. Calcium carbonate and the premenstrual syndrome. Am J Obstet Gynecol
+    1998;179(2):444-452 (industry-funded); Bertone-Johnson ER et al. Arch Intern Med 2005;165(11):1246-1252.
+  url: https://doi.org/10.1016/s0002-9378(98)70377-1
+strength: very_low
+strength_reason: Supplement trial in a PMS population; food evidence is observational.
+cautions:
+- Use only calcium sources that fit the user's diet pattern and allergies; dairy is not the only option.
+- Don't frame cravings as something to resist or a failure.
+conflicts_with: []
+never_say:
+- calcium stops cravings
+- avoid giving in to cravings
+- any supplement or milligram dose

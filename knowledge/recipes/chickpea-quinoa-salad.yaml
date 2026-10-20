@@ -1,0 +1,65 @@
+id: chickpea-quinoa-salad
+name: Chickpea and quinoa salad
+meal_type: lunch
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 10
+total_time_min: 25
+servings: 2
+ingredients:
+- name: Cooked quinoa
+  grams: 300
+  fdc_query: Quinoa, cooked
+  fdc_id: 168917
+  fdc_description: Quinoa, cooked
+  fdc_verified: false
+- name: Canned chickpeas, no salt added, drained
+  grams: 240
+  fdc_query: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+  fdc_id: 173757
+  fdc_description: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Cucumber
+  grams: 160
+  fdc_query: Cucumber, with peel, raw
+  fdc_id: 2346406
+  fdc_description: Cucumber, with peel, raw
+  fdc_verified: false
+- name: Tomato
+  grams: 160
+  fdc_query: Tomatoes, red, ripe, raw, year round average
+  fdc_id: 170457
+  fdc_description: Tomatoes, red, ripe, raw, year round average
+  fdc_verified: false
+- name: Parsley
+  grams: 20
+  fdc_query: Parsley, fresh
+  fdc_id: 170416
+  fdc_description: Parsley, fresh
+  fdc_verified: false
+- name: Lemon juice
+  grams: 30
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 20
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- iron
+- vitamin_c
+- magnesium
+- low_gi
+- low_sodium
+steps:
+- Cook quinoa and let it cool.
+- Toss with chickpeas, chopped cucumber, tomato, and parsley.
+- Dress with lemon juice and olive oil.
+notes: High in fiber. On predicted bloating days, retrieval should prefer a lower-fiber option.

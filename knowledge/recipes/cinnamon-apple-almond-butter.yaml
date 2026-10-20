@@ -1,0 +1,39 @@
+id: cinnamon-apple-almond-butter
+name: Cinnamon apple slices with almond butter
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- tree_nuts
+active_time_min: 3
+total_time_min: 3
+servings: 1
+ingredients:
+- name: Apple
+  grams: 150
+  fdc_query: Apples, raw, with skin
+  fdc_id: 1750340
+  fdc_description: Apples, fuji, with skin, raw
+  fdc_verified: true
+- name: Almond butter
+  grams: 16
+  fdc_query: Nuts, almond butter, plain, without salt added
+  fdc_id: 168588
+  fdc_description: Nuts, almond butter, plain, without salt added
+  fdc_verified: false
+- name: Ground cinnamon
+  grams: 1
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+evidence_tags:
+- cinnamon
+- magnesium
+- low_gi
+steps:
+- Slice the apple.
+- Dust with cinnamon and serve with almond butter for dipping.
+notes: Sunflower seed butter replaces almond butter for tree-nut allergies.

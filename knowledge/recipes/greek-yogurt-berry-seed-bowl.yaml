@@ -1,0 +1,46 @@
+id: greek-yogurt-berry-seed-bowl
+name: Greek yogurt bowl with strawberries and pumpkin seeds
+meal_type: breakfast
+diets:
+- omnivore
+- vegetarian
+allergens:
+- milk
+active_time_min: 5
+total_time_min: 5
+servings: 1
+ingredients:
+- name: Plain Greek yogurt
+  grams: 200
+  fdc_query: Yogurt, Greek, plain, lowfat
+  fdc_id: 170903
+  fdc_description: Yogurt, Greek, plain, lowfat
+  fdc_verified: false
+- name: Strawberries
+  grams: 100
+  fdc_query: Strawberries, raw
+  fdc_id: 167762
+  fdc_description: Strawberries, raw
+  fdc_verified: false
+- name: Pumpkin seeds
+  grams: 15
+  fdc_query: Seeds, pumpkin and squash seed kernels, dried
+  fdc_id: 170556
+  fdc_description: Seeds, pumpkin and squash seed kernels, dried
+  fdc_verified: false
+- name: Ground cinnamon
+  grams: 1
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+evidence_tags:
+- calcium
+- magnesium
+- vitamin_c
+- low_gi
+- protein_first
+steps:
+- Spoon yogurt into a bowl.
+- Top with sliced strawberries, pumpkin seeds, and a pinch of cinnamon.
+notes: Coconut or soy yogurt makes it vegan, but check that it is fortified to keep the calcium tag.

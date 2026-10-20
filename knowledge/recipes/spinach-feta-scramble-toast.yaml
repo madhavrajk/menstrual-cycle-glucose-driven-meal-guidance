@@ -1,0 +1,53 @@
+id: spinach-feta-scramble-toast
+name: Spinach and feta egg scramble with whole-grain toast
+meal_type: breakfast
+diets:
+- omnivore
+- vegetarian
+allergens:
+- egg
+- milk
+- wheat
+active_time_min: 10
+total_time_min: 10
+servings: 1
+ingredients:
+- name: Eggs
+  grams: 100
+  fdc_query: Egg, whole, raw, fresh
+  fdc_id: 171287
+  fdc_description: Egg, whole, raw, fresh
+  fdc_verified: false
+- name: Baby spinach
+  grams: 60
+  fdc_query: Spinach, raw
+  fdc_id: 168462
+  fdc_description: Spinach, raw
+  fdc_verified: false
+- name: Feta cheese
+  grams: 30
+  fdc_query: Cheese, feta
+  fdc_id: 173420
+  fdc_description: Cheese, feta
+  fdc_verified: false
+- name: Whole-wheat bread
+  grams: 40
+  fdc_query: Bread, whole-wheat, commercially prepared
+  fdc_id: 172688
+  fdc_description: Bread, whole-wheat, commercially prepared
+  fdc_verified: false
+- name: Olive oil
+  grams: 5
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- iron
+- calcium
+- protein_first
+steps:
+- Warm the oil in a pan and wilt the spinach.
+- Add beaten eggs and stir gently until just set.
+- Crumble feta over the top and serve with toast.
+notes: Feta is salty; skip it or halve it on predicted bloating days.

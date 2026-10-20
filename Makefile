@@ -13,7 +13,7 @@ endif
 STEP1_HOME = $(shell $(PY) -c "from mealguide import paths; print(paths.HOME)")
 STEP1 = "$(CURDIR)/scripts/step1_data"
 
-.PHONY: setup data synthetic step1 cgm features baselines test lint
+.PHONY: setup data synthetic step1 cgm features baselines fdc test lint
 
 setup:
 	$(PY) -m pip install -r requirements.txt
@@ -47,6 +47,10 @@ features: $(DATA_DEP)
 
 baselines: cgm features
 	$(PY) -m mealguide.pipeline baselines $(FLAG)
+
+# Step 3 (Sneha): fill missing FoodData Central IDs in knowledge/recipes/ (needs FDC_API_KEY)
+fdc:
+	$(PY) -m mealguide.guidance.fdc resolve
 
 test:
 	$(PY) -m pytest -q

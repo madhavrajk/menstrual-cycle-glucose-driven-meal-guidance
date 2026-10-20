@@ -1,0 +1,52 @@
+id: sardine-white-bean-toast
+name: Sardine and white bean toast
+meal_type: lunch
+diets:
+- omnivore
+allergens:
+- fish
+- wheat
+active_time_min: 8
+total_time_min: 8
+servings: 1
+ingredients:
+- name: Canned sardines in oil, with bones
+  grams: 85
+  fdc_query: Fish, sardine, Atlantic, canned in oil, drained solids with bone
+  fdc_id: 175139
+  fdc_description: Fish, sardine, Atlantic, canned in oil, drained solids with bone
+  fdc_verified: false
+- name: Cannellini beans, no salt added, drained
+  grams: 100
+  fdc_query: Beans, white, mature seeds, cooked, boiled, without salt
+  fdc_id: 175203
+  fdc_description: Beans, white, mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Whole-wheat bread
+  grams: 60
+  fdc_query: Bread, whole-wheat, commercially prepared
+  fdc_id: 172688
+  fdc_description: Bread, whole-wheat, commercially prepared
+  fdc_verified: false
+- name: Arugula
+  grams: 30
+  fdc_query: Arugula, raw
+  fdc_id: 169387
+  fdc_description: Arugula, raw
+  fdc_verified: false
+- name: Lemon juice
+  grams: 10
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+evidence_tags:
+- omega3
+- calcium
+- iron
+steps:
+- Toast the bread.
+- Mash beans with lemon juice and spread on toast.
+- Top with sardines and arugula.
+notes: The soft bones are where the calcium comes from. Canned sardines carry some sodium, so this is
+  not tagged low_sodium.

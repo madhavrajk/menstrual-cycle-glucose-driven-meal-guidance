@@ -1,0 +1,62 @@
+id: chicken-brown-rice-bowl
+name: Lemon-garlic chicken bowl with brown rice and broccoli
+meal_type: lunch
+diets:
+- omnivore
+allergens: []
+active_time_min: 15
+total_time_min: 30
+servings: 1
+ingredients:
+- name: Chicken breast
+  grams: 120
+  fdc_query: Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw
+  fdc_id: 171077
+  fdc_description: Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw
+  fdc_verified: true
+- name: Cooked brown rice
+  grams: 150
+  fdc_query: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+  fdc_id: 169704
+  fdc_description: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+  fdc_verified: true
+- name: Broccoli
+  grams: 100
+  fdc_query: Broccoli, raw
+  fdc_id: 747447
+  fdc_description: Broccoli, raw
+  fdc_verified: false
+- name: Red bell pepper
+  grams: 60
+  fdc_query: Peppers, sweet, red, raw
+  fdc_id: 170108
+  fdc_description: Peppers, sweet, red, raw
+  fdc_verified: false
+- name: Garlic
+  grams: 4
+  fdc_query: Garlic, raw
+  fdc_id: 1104647
+  fdc_description: Garlic, raw
+  fdc_verified: false
+- name: Lemon juice
+  grams: 10
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 8
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- protein_first
+- vitamin_c
+- low_sodium
+- low_gi
+steps:
+- Season chicken with garlic and lemon, then pan-cook in oil until 74 °C inside.
+- Steam broccoli and pepper for 4 minutes.
+- Serve chicken and vegetables over rice; eat the chicken and vegetables first.
+notes: A clear protein-and-vegetable portion makes it a good fit for the food-order glucose card.

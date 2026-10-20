@@ -1,0 +1,71 @@
+id: beef-bok-choy-stir-fry
+name: Beef and bok choy stir-fry
+meal_type: dinner
+diets:
+- omnivore
+allergens:
+- soy
+- wheat
+active_time_min: 20
+total_time_min: 25
+servings: 1
+ingredients:
+- name: Lean sirloin, thinly sliced
+  grams: 120
+  fdc_query: Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw
+  fdc_id: 174763
+  fdc_description: Beef, top sirloin, steak, separable lean only, trimmed to 1/8" fat, choice, raw
+  fdc_verified: false
+- name: Bok choy
+  grams: 150
+  fdc_query: Cabbage, chinese (pak-choi), raw
+  fdc_id: 170390
+  fdc_description: Cabbage, chinese (pak-choi), raw
+  fdc_verified: false
+- name: Red bell pepper
+  grams: 75
+  fdc_query: Peppers, sweet, red, raw
+  fdc_id: 170108
+  fdc_description: Peppers, sweet, red, raw
+  fdc_verified: false
+- name: Fresh ginger, grated
+  grams: 6
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Garlic
+  grams: 5
+  fdc_query: Garlic, raw
+  fdc_id: 1104647
+  fdc_description: Garlic, raw
+  fdc_verified: false
+- name: Low-sodium soy sauce
+  grams: 10
+  fdc_query: Soy sauce, made from soy and wheat (shoyu), low sodium
+  fdc_id: 172473
+  fdc_description: Soy sauce made from soy and wheat (shoyu), low sodium
+  fdc_verified: false
+- name: Canola oil
+  grams: 8
+  fdc_query: Oil, canola
+  fdc_id: 748278
+  fdc_description: Oil, canola
+  fdc_verified: false
+- name: Cooked brown rice
+  grams: 150
+  fdc_query: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+  fdc_id: 169704
+  fdc_description: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+  fdc_verified: true
+evidence_tags:
+- iron
+- vitamin_c
+- calcium
+- ginger
+- protein_first
+steps:
+- Stir-fry beef in hot oil for 2 minutes and set aside.
+- Stir-fry pepper, bok choy, ginger, and garlic for 3 minutes.
+- Return beef, add soy sauce, and serve over rice.
+notes: Red meat gives heme iron, the best-absorbed form; the pepper adds vitamin C.

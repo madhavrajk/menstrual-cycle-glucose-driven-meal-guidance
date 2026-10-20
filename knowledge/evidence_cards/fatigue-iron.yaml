@@ -1,0 +1,38 @@
+id: fatigue-iron
+trigger:
+  target: fatigue
+  fires_on:
+  - forecast
+  - logged
+claim: In a randomized trial of menstruating women with unexplained fatigue and low iron stores, 12 weeks
+  of iron supplements reduced fatigue more than placebo.
+allowed_wording: Periods use up iron, and low iron can add to tiredness, so this plan includes iron-rich
+  foods.
+food_tags:
+- iron
+foods:
+- lean red meat
+- poultry
+- fish
+- lentils
+- beans
+- tofu
+- spinach
+- fortified cereals
+- plant iron paired with vitamin C (citrus, peppers, tomatoes)
+research_dose: 80 mg elemental iron a day for 12 weeks
+population: 198 menstruating women aged 18-53 with fatigue, ferritin below 50 ug/L, and no anemia
+source:
+  citation: Vaucher P et al. Effect of iron supplementation on fatigue in nonanemic menstruating women
+    with low ferritin. CMAJ 2012;184(11):1247-1254.
+  url: https://pubmed.ncbi.nlm.nih.gov/22777991/
+strength: very_low
+strength_reason: Food rather than supplements; the user's iron status is unknown.
+cautions:
+- Fatigue has many causes; suggest asking a clinician to check iron if tiredness persists.
+- Do not suggest iron supplements.
+conflicts_with: []
+never_say:
+- iron will fix your fatigue
+- you are iron deficient
+- any supplement or milligram dose
