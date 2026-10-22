@@ -1,0 +1,61 @@
+id: sweet-potato-black-bean-hash
+name: Sweet potato and black bean hash
+meal_type: breakfast
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 10
+total_time_min: 25
+servings: 1
+ingredients:
+- name: Sweet potato
+  grams: 150
+  fdc_query: Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)
+  fdc_id: 168482
+  fdc_description: Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)
+  fdc_verified: true
+- name: Black beans, no salt added, drained
+  grams: 85
+  fdc_query: Beans, black, mature seeds, cooked, boiled, without salt
+  fdc_id: 173735
+  fdc_description: Beans, black, mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Red bell pepper
+  grams: 60
+  fdc_query: Peppers, sweet, red, raw
+  fdc_id: 170108
+  fdc_description: Peppers, sweet, red, raw
+  fdc_verified: false
+- name: Onion
+  grams: 40
+  fdc_query: Onions, raw
+  fdc_id: 170000
+  fdc_description: Onions, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 7
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Ground cumin
+  grams: 1
+  fdc_query: Spices, cumin seed
+  fdc_id: 170923
+  fdc_description: Spices, cumin seed
+  fdc_verified: false
+evidence_tags:
+- iron
+- vitamin_c
+- b6
+- magnesium
+- low_sodium
+- low_gi
+- plant_based
+steps:
+- Cook diced sweet potato in oil, covered, for 12 minutes.
+- Add onion, pepper, and cumin; cook 5 minutes.
+- Stir in beans until hot.
+notes: Pepper's vitamin C helps absorb the iron in the beans.

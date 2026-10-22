@@ -1,0 +1,37 @@
+id: cramps-omega3
+trigger:
+  target: cramps
+  fires_on:
+  - forecast
+  - logged
+claim: In a meta-analysis of 12 trials in 881 women with painful periods, 300-1800 mg a day of long-chain
+  omega-3 (EPA and DHA) for 2-3 months reduced period pain and painkiller use.
+allowed_wording: Eating oily fish regularly may help with period pain over time, so this plan includes
+  it.
+food_tags:
+- omega3
+foods:
+- salmon
+- sardines
+- mackerel
+- trout
+- herring
+- canned salmon
+research_dose: 300-1800 mg EPA+DHA a day for 2-3 months, as supplements
+population: 881 women with primary dysmenorrhea across 12 studies
+source:
+  citation: 'Omega-3 long chain polyunsaturated fatty acids as a potential treatment for reducing dysmenorrhoea
+    pain: systematic literature review and meta-analysis. Nutrition & Dietetics 2023.'
+  url: https://pubmed.ncbi.nlm.nih.gov/37545015/
+strength: low
+strength_reason: Supplement trials; the effect builds over months, not overnight.
+cautions:
+- Frame as a regular habit (oily fish once or twice a week), not a next-day fix.
+- Plant foods such as flax, chia, and walnuts provide ALA, a different omega-3 the trials did not test;
+  do not present them as equivalent.
+- Show the severe-pain prompt.
+conflicts_with: []
+never_say:
+- fish will stop your cramps tomorrow
+- flax or chia work the same way
+- any supplement or milligram dose

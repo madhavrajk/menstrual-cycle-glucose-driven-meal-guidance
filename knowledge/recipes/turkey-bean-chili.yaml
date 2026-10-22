@@ -1,0 +1,74 @@
+id: turkey-bean-chili
+name: Turkey and kidney bean chili
+meal_type: dinner
+diets:
+- omnivore
+allergens: []
+active_time_min: 20
+total_time_min: 50
+servings: 3
+ingredients:
+- name: Ground turkey, 93% lean
+  grams: 340
+  fdc_query: Turkey, ground, 93% lean, 7% fat, raw
+  fdc_id: 172850
+  fdc_description: Turkey, ground, 93% lean, 7% fat, raw
+  fdc_verified: false
+- name: Kidney beans, no salt added, drained
+  grams: 340
+  fdc_query: Beans, kidney, red, mature seeds, cooked, boiled, without salt
+  fdc_id: 175194
+  fdc_description: Beans, kidney, red, mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Canned tomatoes, no salt added
+  grams: 400
+  fdc_query: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_id: 170138
+  fdc_description: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_verified: false
+- name: Onion
+  grams: 120
+  fdc_query: Onions, raw
+  fdc_id: 170000
+  fdc_description: Onions, raw
+  fdc_verified: false
+- name: Red bell pepper
+  grams: 120
+  fdc_query: Peppers, sweet, red, raw
+  fdc_id: 170108
+  fdc_description: Peppers, sweet, red, raw
+  fdc_verified: false
+- name: Chili powder
+  grams: 6
+  fdc_query: Spices, chili powder
+  fdc_id: 171319
+  fdc_description: Spices, chili powder
+  fdc_verified: false
+- name: Ground cumin
+  grams: 3
+  fdc_query: Spices, cumin seed
+  fdc_id: 170923
+  fdc_description: Spices, cumin seed
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Water
+  grams: 150
+  fdc_query: Beverages, water, tap, drinking
+  fdc_id: 173647
+  fdc_description: Beverages, water, tap, drinking
+  fdc_verified: false
+evidence_tags:
+- iron
+- protein_first
+- b6
+- vitamin_c
+- low_sodium
+steps:
+- Brown turkey with onion and pepper in oil.
+- Add spices, beans, tomatoes, and water; simmer 30 minutes.
+notes: Freezes well.

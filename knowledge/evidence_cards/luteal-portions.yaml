@@ -1,0 +1,30 @@
+id: luteal-portions
+trigger:
+  target: luteal
+  fires_on:
+  - phase
+claim: A meta-analysis of 15 datasets (330 women) found people ate about 168 kcal a day more in the luteal
+  phase than in the follicular phase. Resting metabolism may rise slightly, but recent studies found no
+  significant change.
+allowed_wording: Feeling hungrier before your period is common, so today's portions sit at the upper end
+  of your range.
+food_tags: []
+foods:
+- no specific foods; this card changes portion size
+research_dose: Observed intake difference of about 168 kcal/day; not an intervention
+population: 330 women aged 18-45 with normal BMI and no history of disordered eating
+source:
+  citation: 'Tucker JAL et al. The effect of the menstrual cycle on energy intake: a systematic review
+    and meta-analysis. Nutrition Reviews 2025;83(3):e866.'
+  url: https://academic.oup.com/nutritionreviews/article/83/3/e866/7713894
+strength: low
+strength_reason: Describes average intake; no evidence that matching it helps symptoms.
+cautions:
+- 'Pending team sign-off: off by default in the portion calculator (luteal_upper=False).'
+- For users with a weight-loss goal, keep the capped deficit and never go below estimated resting needs.
+- Never frame hunger as something to resist or as a lack of willpower.
+conflicts_with: []
+never_say:
+- you burn more calories before your period
+- eat less to make up for cravings
+- any calorie number for the phase

@@ -1,0 +1,32 @@
+id: menses-iron-vitc
+trigger:
+  target: menses
+  fires_on:
+  - phase
+claim: In isotope absorption studies of 299 people, adding vitamin C to a meal raised absorption of plant
+  (non-heme) iron; about 50 mg of vitamin C per main meal was optimal.
+allowed_wording: Pairing iron-rich foods with vitamin C helps your body absorb the iron, which matters
+  during your period.
+food_tags:
+- iron
+- vitamin_c
+foods:
+- lentils, beans, tofu, or spinach with peppers, tomatoes, citrus, broccoli, or strawberries
+- lean red meat (heme iron, absorbed well on its own)
+research_dose: About 50 mg vitamin C per main meal
+population: 299 adults in single-meal absorption studies; not a symptom study
+source:
+  citation: Hallberg L, Brune M, Rossander L. Effect of ascorbic acid on iron absorption from different
+    types of meals. Hum Nutr Appl Nutr 1986.
+  url: https://pubmed.ncbi.nlm.nih.gov/3700141/
+strength: low
+strength_reason: Shows better iron absorption, not fewer symptoms.
+cautions:
+- This is the phase-based fallback when no symptom is forecast; it is about absorbing iron, not treating
+  a symptom.
+- Do not suggest iron or vitamin C supplements.
+conflicts_with: []
+never_say:
+- this will boost your energy
+- you need extra iron
+- any supplement or milligram dose

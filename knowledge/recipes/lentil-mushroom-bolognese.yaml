@@ -1,0 +1,83 @@
+id: lentil-mushroom-bolognese
+name: Lentil and mushroom bolognese
+meal_type: dinner
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- wheat
+active_time_min: 20
+total_time_min: 45
+servings: 2
+ingredients:
+- name: Whole-wheat pasta, dry
+  grams: 150
+  fdc_query: Pasta, whole-wheat, dry
+  fdc_id: 168915
+  fdc_description: Pasta, whole grain, 51% whole wheat, remaining unenriched semolina, dry
+  fdc_verified: true
+- name: Dried brown lentils
+  grams: 100
+  fdc_query: Lentils, raw
+  fdc_id: 172420
+  fdc_description: Lentils, raw
+  fdc_verified: false
+- name: White mushrooms
+  grams: 200
+  fdc_query: Mushrooms, white, raw
+  fdc_id: 169251
+  fdc_description: Mushrooms, white, raw
+  fdc_verified: false
+- name: Canned tomatoes, no salt added
+  grams: 400
+  fdc_query: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_id: 170138
+  fdc_description: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_verified: false
+- name: Onion
+  grams: 100
+  fdc_query: Onions, raw
+  fdc_id: 170000
+  fdc_description: Onions, raw
+  fdc_verified: false
+- name: Carrot
+  grams: 80
+  fdc_query: Carrots, raw
+  fdc_id: 170393
+  fdc_description: Carrots, raw
+  fdc_verified: false
+- name: Garlic
+  grams: 8
+  fdc_query: Garlic, raw
+  fdc_id: 1104647
+  fdc_description: Garlic, raw
+  fdc_verified: false
+- name: Dried oregano
+  grams: 2
+  fdc_query: Spices, oregano, dried
+  fdc_id: 171328
+  fdc_description: Spices, oregano, dried
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Water
+  grams: 250
+  fdc_query: Beverages, water, tap, drinking
+  fdc_id: 173647
+  fdc_description: Beverages, water, tap, drinking
+  fdc_verified: false
+evidence_tags:
+- iron
+- magnesium
+- low_gi
+- low_sodium
+- plant_based
+steps:
+- Soften onion, carrot, garlic, and mushrooms in oil.
+- Add lentils, tomatoes, oregano, and water; simmer 30 minutes.
+- Serve over the cooked pasta.

@@ -1,0 +1,56 @@
+id: chicken-hummus-pita
+name: Chicken, hummus, and spinach pita
+meal_type: lunch
+diets:
+- omnivore
+allergens:
+- wheat
+- sesame
+active_time_min: 15
+total_time_min: 20
+servings: 1
+ingredients:
+- name: Chicken breast
+  grams: 90
+  fdc_query: Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw
+  fdc_id: 171077
+  fdc_description: Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw
+  fdc_verified: true
+- name: Whole-wheat pita
+  grams: 64
+  fdc_query: Bread, pita, whole-wheat
+  fdc_id: 174916
+  fdc_description: Bread, pita, whole-wheat
+  fdc_verified: false
+- name: Hummus
+  grams: 30
+  fdc_query: Hummus, commercial
+  fdc_id: 174289
+  fdc_description: Hummus, commercial
+  fdc_verified: false
+- name: Baby spinach
+  grams: 30
+  fdc_query: Spinach, raw
+  fdc_id: 168462
+  fdc_description: Spinach, raw
+  fdc_verified: false
+- name: Tomato
+  grams: 60
+  fdc_query: Tomatoes, red, ripe, raw, year round average
+  fdc_id: 170457
+  fdc_description: Tomatoes, red, ripe, raw, year round average
+  fdc_verified: false
+- name: Cucumber
+  grams: 40
+  fdc_query: Cucumber, with peel, raw
+  fdc_id: 2346406
+  fdc_description: Cucumber, with peel, raw
+  fdc_verified: false
+evidence_tags:
+- protein_first
+- b6
+- vitamin_c
+steps:
+- Cook the chicken until 74 °C inside, then slice.
+- Spread hummus in the pita and fill with chicken and vegetables.
+notes: Hummus contains tahini (sesame).

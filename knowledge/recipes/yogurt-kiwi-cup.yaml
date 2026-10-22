@@ -1,0 +1,37 @@
+id: yogurt-kiwi-cup
+name: Yogurt with kiwi and pumpkin seeds
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+allergens:
+- milk
+active_time_min: 3
+total_time_min: 3
+servings: 1
+ingredients:
+- name: Plain Greek yogurt
+  grams: 170
+  fdc_query: Yogurt, Greek, plain, lowfat
+  fdc_id: 170903
+  fdc_description: Yogurt, Greek, plain, lowfat
+  fdc_verified: false
+- name: Kiwi
+  grams: 75
+  fdc_query: Kiwifruit, green, raw
+  fdc_id: 327046
+  fdc_description: Kiwifruit, green, raw
+  fdc_verified: false
+- name: Pumpkin seeds
+  grams: 10
+  fdc_query: Seeds, pumpkin and squash seed kernels, dried
+  fdc_id: 170556
+  fdc_description: Seeds, pumpkin and squash seed kernels, dried
+  fdc_verified: false
+evidence_tags:
+- calcium
+- vitamin_c
+- magnesium
+- protein_first
+steps:
+- Top yogurt with sliced kiwi and pumpkin seeds.

@@ -1,0 +1,36 @@
+id: bloating-magnesium
+trigger:
+  target: bloating
+  fires_on:
+  - forecast
+  - logged
+claim: In a small crossover trial of 38 women, 200 mg a day of magnesium reduced premenstrual fluid-retention
+  symptoms, including bloating, in the second month only.
+allowed_wording: Some research links magnesium to less premenstrual bloating, so this plan includes magnesium-rich
+  foods.
+food_tags:
+- magnesium
+foods:
+- pumpkin seeds
+- almonds
+- spinach
+- black beans
+- quinoa
+- dark chocolate
+- whole grains
+research_dose: 200 mg magnesium (as magnesium oxide) a day for 2 cycles
+population: 38 women with mild premenstrual symptoms
+source:
+  citation: Walker AF et al. Magnesium supplementation alleviates premenstrual symptoms of fluid retention.
+    J Womens Health 1998;7(9):1157-1165.
+  url: https://journals.sagepub.com/doi/10.1089/jwh.1998.7.1157
+strength: very_low
+strength_reason: One small supplement trial; effect only in the second cycle.
+cautions:
+- Many magnesium-rich foods are high in fiber, which can add to bloating; prefer seeds, nuts, and spinach
+  over large bean portions on bloating days.
+conflicts_with:
+- bloating-sodium
+never_say:
+- magnesium cures bloating
+- any supplement or milligram dose

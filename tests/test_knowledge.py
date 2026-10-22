@@ -33,6 +33,8 @@ def test_every_diet_has_each_meal_type():
 def test_every_card_has_matching_recipes():
     """Retrieval must never come back empty when a card fires."""
     for card in CARDS:
+        if not card["food_tags"]:  # portion or meal-structure cards change no foods
+            continue
         matches = [r for r in RECIPES if set(card["food_tags"]) & set(r["evidence_tags"])]
         assert matches, f"no recipe carries any of {card['food_tags']} for {card['id']}"
 

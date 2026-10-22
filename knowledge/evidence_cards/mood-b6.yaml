@@ -1,0 +1,36 @@
+id: mood-b6
+trigger:
+  target: mood
+  fires_on:
+  - forecast
+  - logged
+claim: A systematic review of 9 trials (940 women with PMS) found 50-100 mg a day of vitamin B6 improved
+  overall and depressive premenstrual symptoms more than placebo.
+allowed_wording: Vitamin B6 has been studied for premenstrual mood, and this plan includes some B6-rich
+  foods.
+food_tags:
+- b6
+foods:
+- chickpeas
+- salmon
+- chicken breast
+- potatoes
+- bananas
+- fortified cereals
+research_dose: 50-100 mg vitamin B6 a day as supplements; food provides about 0.5-1 mg per serving
+population: 940 women with premenstrual syndrome across 9 trials
+source:
+  citation: 'Wyatt KM et al. Efficacy of vitamin B-6 in the treatment of premenstrual syndrome: systematic
+    review. BMJ 1999;318:1375-1381.'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC27878
+strength: very_low
+strength_reason: Trial doses are about 100 times what food provides.
+cautions:
+- Use only if the team decides to forecast mood.
+- High-dose B6 supplements can cause nerve damage; never suggest supplements.
+- If low mood is severe or lasting, suggest talking to a clinician.
+conflicts_with: []
+never_say:
+- B6 will fix your mood
+- treats PMS or depression
+- any supplement or milligram dose

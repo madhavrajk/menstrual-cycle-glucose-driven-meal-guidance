@@ -1,0 +1,33 @@
+id: cramps-plant-based
+trigger:
+  target: cramps
+  fires_on:
+  - forecast
+  - logged
+claim: In a crossover trial of 33 women, two cycles on a low-fat vegetarian diet shortened and eased period
+  pain and shortened premenstrual water-retention symptoms.
+allowed_wording: One small study found low-fat, plant-based meals eased period pain for some women, so
+  this plan includes a plant-forward option.
+food_tags:
+- plant_based
+foods:
+- bean, lentil, and vegetable dishes
+- whole grains
+- fruit
+- tofu dishes with little added oil
+research_dose: 'Whole-diet change: no animal products, fried foods, avocados, olives, nuts, or seeds,
+  for 2 cycles'
+population: 33 women with period pain or premenstrual symptoms
+source:
+  citation: Barnard ND et al. Diet and sex-hormone binding globulin, dysmenorrhea, and premenstrual symptoms.
+    Obstet Gynecol 2000;95(2):245-250. Authors lead a plant-based advocacy group.
+  url: https://pubmed.ncbi.nlm.nih.gov/10674588/
+strength: very_low
+strength_reason: One small trial of a whole-diet change; possible author bias.
+cautions:
+- Only shift choices within the user's own diet pattern; never push an omnivore to go vegan.
+- Show the severe-pain prompt.
+conflicts_with: []
+never_say:
+- meat causes cramps
+- going vegan will fix your periods

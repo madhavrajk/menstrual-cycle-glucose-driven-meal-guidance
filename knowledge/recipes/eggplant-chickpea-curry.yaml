@@ -1,0 +1,78 @@
+id: eggplant-chickpea-curry
+name: Eggplant and chickpea curry
+meal_type: dinner
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 20
+total_time_min: 45
+servings: 2
+ingredients:
+- name: Eggplant
+  grams: 300
+  fdc_query: Eggplant, raw
+  fdc_id: 169228
+  fdc_description: Eggplant, raw
+  fdc_verified: false
+- name: Canned chickpeas, no salt added, drained
+  grams: 240
+  fdc_query: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+  fdc_id: 173757
+  fdc_description: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Canned tomatoes, no salt added
+  grams: 400
+  fdc_query: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_id: 170138
+  fdc_description: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_verified: false
+- name: Onion
+  grams: 100
+  fdc_query: Onions, raw
+  fdc_id: 170000
+  fdc_description: Onions, raw
+  fdc_verified: false
+- name: Fresh ginger, grated
+  grams: 10
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Garlic
+  grams: 8
+  fdc_query: Garlic, raw
+  fdc_id: 1104647
+  fdc_description: Garlic, raw
+  fdc_verified: false
+- name: Curry powder
+  grams: 6
+  fdc_query: Spices, curry powder
+  fdc_id: 170924
+  fdc_description: Spices, curry powder
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Cooked brown rice
+  grams: 300
+  fdc_query: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+  fdc_id: 169704
+  fdc_description: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+  fdc_verified: true
+evidence_tags:
+- ginger
+- iron
+- b6
+- magnesium
+- low_sodium
+- plant_based
+steps:
+- Soften onion, ginger, and garlic in oil; add curry powder.
+- Add eggplant, chickpeas, and tomatoes; simmer 25 minutes.
+- Serve over rice.
+notes: Check the curry powder label; some blends contain salt.

@@ -1,0 +1,60 @@
+id: cinnamon-quinoa-porridge
+name: Cinnamon quinoa porridge with blueberries
+meal_type: breakfast
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- soy
+active_time_min: 5
+total_time_min: 8
+servings: 1
+ingredients:
+- name: Cooked quinoa
+  grams: 185
+  fdc_query: Quinoa, cooked
+  fdc_id: 168917
+  fdc_description: Quinoa, cooked
+  fdc_verified: false
+- name: Fortified soy milk
+  grams: 120
+  fdc_query: Soymilk, original and vanilla, with added calcium, vitamins A and D
+  fdc_id: 172456
+  fdc_description: Soymilk, original and vanilla, with added calcium, vitamins A and D
+  fdc_verified: false
+- name: Ground cinnamon
+  grams: 2
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+- name: Blueberries
+  grams: 75
+  fdc_query: Blueberries, raw
+  fdc_id: 2346411
+  fdc_description: Blueberries, raw
+  fdc_verified: false
+- name: Pumpkin seeds
+  grams: 10
+  fdc_query: Seeds, pumpkin and squash seed kernels, dried
+  fdc_id: 170556
+  fdc_description: Seeds, pumpkin and squash seed kernels, dried
+  fdc_verified: false
+- name: Maple syrup
+  grams: 7
+  fdc_query: Syrups, maple
+  fdc_id: 169661
+  fdc_description: Syrups, maple
+  fdc_verified: false
+evidence_tags:
+- cinnamon
+- calcium
+- magnesium
+- low_gi
+- low_sodium
+- plant_based
+steps:
+- Warm cooked quinoa with soy milk and cinnamon for 3 minutes.
+- Top with blueberries, pumpkin seeds, and maple syrup.
+notes: A good use for leftover quinoa. Fortified soy milk carries the calcium tag.

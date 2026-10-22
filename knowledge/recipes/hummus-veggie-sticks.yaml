@@ -1,0 +1,42 @@
+id: hummus-veggie-sticks
+name: Hummus with vegetable sticks
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- sesame
+active_time_min: 5
+total_time_min: 5
+servings: 1
+ingredients:
+- name: Hummus
+  grams: 60
+  fdc_query: Hummus, commercial
+  fdc_id: 174289
+  fdc_description: Hummus, commercial
+  fdc_verified: false
+- name: Carrot
+  grams: 80
+  fdc_query: Carrots, raw
+  fdc_id: 170393
+  fdc_description: Carrots, raw
+  fdc_verified: false
+- name: Cucumber
+  grams: 80
+  fdc_query: Cucumber, with peel, raw
+  fdc_id: 2346406
+  fdc_description: Cucumber, with peel, raw
+  fdc_verified: false
+- name: Red bell pepper
+  grams: 60
+  fdc_query: Peppers, sweet, red, raw
+  fdc_id: 170108
+  fdc_description: Peppers, sweet, red, raw
+  fdc_verified: false
+evidence_tags:
+- vitamin_c
+steps:
+- Cut vegetables into sticks and serve with hummus.
+notes: Store-bought hummus is moderately salty.

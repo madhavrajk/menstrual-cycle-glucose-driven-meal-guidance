@@ -1,0 +1,37 @@
+id: fennel-seed-tea
+name: Fennel seed tea
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 2
+total_time_min: 10
+servings: 1
+ingredients:
+- name: Fennel seeds
+  grams: 3
+  fdc_query: Spices, fennel seed
+  fdc_id: 171323
+  fdc_description: Spices, fennel seed
+  fdc_verified: false
+- name: Water
+  grams: 250
+  fdc_query: Beverages, water, tap, drinking
+  fdc_id: 173647
+  fdc_description: Beverages, water, tap, drinking
+  fdc_verified: false
+- name: Maple syrup
+  grams: 5
+  fdc_query: Syrups, maple
+  fdc_id: 169661
+  fdc_description: Syrups, maple
+  fdc_verified: false
+evidence_tags:
+- fennel
+- low_sodium
+steps:
+- Lightly crush the seeds and steep in just-boiled water for 8 minutes.
+- Strain and sweeten if you like.
+notes: Far below the fennel doses used in trials.

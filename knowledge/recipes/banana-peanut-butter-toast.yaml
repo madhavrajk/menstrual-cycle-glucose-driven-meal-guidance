@@ -1,0 +1,46 @@
+id: banana-peanut-butter-toast
+name: Banana peanut butter toast
+meal_type: breakfast
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- peanuts
+- wheat
+active_time_min: 4
+total_time_min: 4
+servings: 1
+ingredients:
+- name: Whole-wheat bread
+  grams: 60
+  fdc_query: Bread, whole-wheat, commercially prepared
+  fdc_id: 172688
+  fdc_description: Bread, whole-wheat, commercially prepared
+  fdc_verified: false
+- name: Peanut butter, no salt added
+  grams: 32
+  fdc_query: Peanut butter, smooth style, without salt
+  fdc_id: 172470
+  fdc_description: Peanut butter, smooth style, without salt
+  fdc_verified: false
+- name: Banana
+  grams: 100
+  fdc_query: Bananas, raw
+  fdc_id: 173944
+  fdc_description: Bananas, raw
+  fdc_verified: false
+- name: Ground cinnamon
+  grams: 1
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+evidence_tags:
+- b6
+- magnesium
+- cinnamon
+steps:
+- Toast the bread.
+- Spread with peanut butter, top with sliced banana and a pinch of cinnamon.
+notes: Banana is one of the easier food sources of vitamin B6.

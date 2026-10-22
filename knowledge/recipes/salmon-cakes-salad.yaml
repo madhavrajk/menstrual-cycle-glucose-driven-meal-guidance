@@ -1,0 +1,70 @@
+id: salmon-cakes-salad
+name: Salmon cakes with a green salad
+meal_type: dinner
+diets:
+- omnivore
+allergens:
+- fish
+- egg
+active_time_min: 20
+total_time_min: 30
+servings: 2
+ingredients:
+- name: Canned pink salmon, with bones
+  grams: 200
+  fdc_query: Fish, salmon, pink, canned, drained solids with bone
+  fdc_id: 175175
+  fdc_description: Fish, salmon, pink, canned, drained solids
+  fdc_verified: true
+- name: Eggs
+  grams: 50
+  fdc_query: Egg, whole, raw, fresh
+  fdc_id: 171287
+  fdc_description: Egg, whole, raw, fresh
+  fdc_verified: false
+- name: Rolled oats
+  grams: 30
+  fdc_query: Oats, regular and quick, not fortified, dry
+  fdc_id: 173904
+  fdc_description: Cereals, oats, regular and quick, not fortified, dry
+  fdc_verified: true
+- name: Scallions
+  grams: 15
+  fdc_query: Onions, spring or scallions (includes tops and bulb), raw
+  fdc_id: 170005
+  fdc_description: Onions, spring or scallions (includes tops and bulb), raw
+  fdc_verified: false
+- name: Lemon juice
+  grams: 10
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Romaine lettuce
+  grams: 100
+  fdc_query: Lettuce, cos or romaine, raw
+  fdc_id: 169247
+  fdc_description: Lettuce, cos or romaine, raw
+  fdc_verified: false
+- name: Tomato
+  grams: 100
+  fdc_query: Tomatoes, red, ripe, raw, year round average
+  fdc_id: 170457
+  fdc_description: Tomatoes, red, ripe, raw, year round average
+  fdc_verified: false
+evidence_tags:
+- omega3
+- calcium
+- protein_first
+- b6
+steps:
+- Mash salmon (bones included) with egg, oats, scallion, and lemon; shape 4 cakes.
+- Pan-fry in oil 4 minutes per side.
+- Serve with romaine and tomato.
+notes: Oats replace breadcrumbs, so the cakes are wheat-free.

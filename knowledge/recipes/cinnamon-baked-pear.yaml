@@ -1,0 +1,44 @@
+id: cinnamon-baked-pear
+name: Cinnamon baked pear with walnuts
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- tree_nuts
+active_time_min: 5
+total_time_min: 30
+servings: 1
+ingredients:
+- name: Pear
+  grams: 180
+  fdc_query: Pears, raw
+  fdc_id: 169118
+  fdc_description: Pears, raw
+  fdc_verified: false
+- name: Ground cinnamon
+  grams: 1
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+- name: Walnuts
+  grams: 15
+  fdc_query: Nuts, walnuts, english
+  fdc_id: 170187
+  fdc_description: Nuts, walnuts, english
+  fdc_verified: false
+- name: Maple syrup
+  grams: 5
+  fdc_query: Syrups, maple
+  fdc_id: 169661
+  fdc_description: Syrups, maple
+  fdc_verified: false
+evidence_tags:
+- cinnamon
+- low_sodium
+steps:
+- Halve and core the pear; sprinkle with cinnamon and maple.
+- Bake at 190 °C for 25 minutes; top with walnuts.
+notes: Pumpkin seeds replace walnuts for tree-nut allergies.

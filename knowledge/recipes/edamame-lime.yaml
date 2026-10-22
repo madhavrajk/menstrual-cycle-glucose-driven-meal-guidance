@@ -1,0 +1,32 @@
+id: edamame-lime
+name: Edamame with lime
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- soy
+active_time_min: 2
+total_time_min: 6
+servings: 1
+ingredients:
+- name: Shelled edamame
+  grams: 150
+  fdc_query: Edamame, frozen, prepared
+  fdc_id: 168411
+  fdc_description: Edamame, frozen, prepared
+  fdc_verified: false
+- name: Lime juice
+  grams: 5
+  fdc_query: Lime juice, raw
+  fdc_id: 168156
+  fdc_description: Lime juice, raw
+  fdc_verified: false
+evidence_tags:
+- protein_first
+- magnesium
+- iron
+- low_sodium
+steps:
+- Warm edamame and squeeze lime over.

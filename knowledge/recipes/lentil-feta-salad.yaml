@@ -1,0 +1,63 @@
+id: lentil-feta-salad
+name: Lentil, cucumber, and feta salad
+meal_type: lunch
+diets:
+- omnivore
+- vegetarian
+allergens:
+- milk
+active_time_min: 10
+total_time_min: 30
+servings: 1
+ingredients:
+- name: Dried brown lentils
+  grams: 70
+  fdc_query: Lentils, raw
+  fdc_id: 172420
+  fdc_description: Lentils, raw
+  fdc_verified: false
+- name: Feta cheese
+  grams: 30
+  fdc_query: Cheese, feta
+  fdc_id: 173420
+  fdc_description: Cheese, feta
+  fdc_verified: false
+- name: Cucumber
+  grams: 80
+  fdc_query: Cucumber, with peel, raw
+  fdc_id: 2346406
+  fdc_description: Cucumber, with peel, raw
+  fdc_verified: false
+- name: Tomato
+  grams: 80
+  fdc_query: Tomatoes, red, ripe, raw, year round average
+  fdc_id: 170457
+  fdc_description: Tomatoes, red, ripe, raw, year round average
+  fdc_verified: false
+- name: Parsley
+  grams: 10
+  fdc_query: Parsley, fresh
+  fdc_id: 170416
+  fdc_description: Parsley, fresh
+  fdc_verified: false
+- name: Lemon juice
+  grams: 15
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- iron
+- vitamin_c
+- magnesium
+- protein_first
+steps:
+- Simmer lentils in water for 20 minutes, drain, and cool.
+- Toss with chopped vegetables, parsley, feta, lemon, and oil.
+notes: Feta is salty; halve it on predicted bloating days.

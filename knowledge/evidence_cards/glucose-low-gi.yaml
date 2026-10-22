@@ -1,0 +1,35 @@
+id: glucose-low-gi
+trigger:
+  target: unstable_glucose
+  fires_on:
+  - forecast
+claim: In a small randomized crossover trial, healthy adults eating low-glycemic-load meals for three
+  days had lower blood sugar after meals on a continuous glucose monitor than on high-glycemic-load meals.
+allowed_wording: Choosing slower-digesting carbs, like oats, beans, or whole grains, can soften blood-sugar
+  rises, so today's plan favors them.
+food_tags:
+- low_gi
+foods:
+- oats
+- lentils and beans
+- quinoa
+- whole-grain pasta
+- sweet potato
+- most whole fruit
+research_dose: Whole diets of low vs high glycemic load for 3 days
+population: 23 healthy but overweight adults
+source:
+  citation: 'Fechner E et al. Diet-induced differences in estimated plasma glucose concentrations in healthy,
+    non-diabetic adults are detected by continuous glucose monitoring: a randomized crossover trial. Maastricht
+    University.'
+  url: https://cris.maastrichtuniversity.nl/en/publications/e14fc97a-841e-41d4-8d96-979b0db2fc77
+strength: very_low
+strength_reason: Small trial in overweight adults; glucose only, not symptoms.
+cautions:
+- The low_gi tag is set by hand from the main carbohydrate source; FoodData Central has no glycemic index
+  to check it against.
+conflicts_with: []
+never_say:
+- prevents diabetes
+- stabilizes your hormones
+- any glycemic index number

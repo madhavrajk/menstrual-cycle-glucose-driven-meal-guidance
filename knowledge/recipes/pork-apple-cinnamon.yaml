@@ -1,0 +1,55 @@
+id: pork-apple-cinnamon
+name: Pork tenderloin with cinnamon apples
+meal_type: dinner
+diets:
+- omnivore
+allergens: []
+active_time_min: 15
+total_time_min: 35
+servings: 1
+ingredients:
+- name: Pork tenderloin
+  grams: 130
+  fdc_query: Pork, fresh, loin, tenderloin, separable lean only, raw
+  fdc_id: 168249
+  fdc_description: Pork, fresh, loin, tenderloin, separable lean only, raw
+  fdc_verified: false
+- name: Apple
+  grams: 120
+  fdc_query: Apples, raw, with skin
+  fdc_id: 1750340
+  fdc_description: Apples, fuji, with skin, raw
+  fdc_verified: true
+- name: Ground cinnamon
+  grams: 1
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+- name: Green beans
+  grams: 120
+  fdc_query: Beans, snap, green, raw
+  fdc_id: 2346400
+  fdc_description: Beans, snap, green, raw
+  fdc_verified: false
+- name: Potatoes, with skin
+  grams: 150
+  fdc_query: Potatoes, flesh and skin, raw
+  fdc_id: 170026
+  fdc_description: Potatoes, flesh and skin, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 8
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- cinnamon
+- b6
+- protein_first
+- low_sodium
+steps:
+- Roast potato wedges at 210 °C for 25 minutes.
+- Sear pork in oil, then cook through to 63 °C; rest 5 minutes.
+- Soften sliced apple with cinnamon in the same pan; steam green beans.

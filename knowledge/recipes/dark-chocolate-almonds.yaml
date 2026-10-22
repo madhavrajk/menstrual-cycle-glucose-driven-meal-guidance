@@ -1,0 +1,32 @@
+id: dark-chocolate-almonds
+name: Dark chocolate and almonds
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- tree_nuts
+active_time_min: 1
+total_time_min: 1
+servings: 1
+ingredients:
+- name: Dark chocolate (70-85%)
+  grams: 20
+  fdc_query: Chocolate, dark, 70-85% cacao solids
+  fdc_id: 170273
+  fdc_description: Chocolate, dark, 70-85% cacao solids
+  fdc_verified: false
+- name: Almonds
+  grams: 20
+  fdc_query: Nuts, almonds
+  fdc_id: 170567
+  fdc_description: Nuts, almonds
+  fdc_verified: false
+evidence_tags:
+- magnesium
+- iron
+- low_sodium
+steps:
+- Portion out and enjoy.
+notes: Some dark chocolate is made on shared lines with milk; check the label for milk allergies.

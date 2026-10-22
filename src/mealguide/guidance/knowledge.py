@@ -22,7 +22,7 @@ ALLERGENS = {"milk", "egg", "fish", "shellfish", "tree_nuts", "peanuts", "wheat"
 # Shared vocabulary: a card's food_tags must match recipes' evidence_tags.
 FOOD_TAGS = {
     "ginger", "cinnamon", "fennel", "omega3", "iron", "vitamin_c", "calcium", "magnesium",
-    "b6", "low_sodium", "low_gi", "protein_first",
+    "b6", "low_sodium", "low_gi", "protein_first", "plant_based",
 }
 TRIGGER_TARGETS = {"cramps", "fatigue", "bloating", "cravings", "mood", "unstable_glucose",
                    "menses", "luteal"}

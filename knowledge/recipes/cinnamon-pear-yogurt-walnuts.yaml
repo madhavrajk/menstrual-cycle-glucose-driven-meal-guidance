@@ -1,0 +1,46 @@
+id: cinnamon-pear-yogurt-walnuts
+name: Cinnamon pear yogurt with walnuts
+meal_type: breakfast
+diets:
+- omnivore
+- vegetarian
+allergens:
+- milk
+- tree_nuts
+active_time_min: 5
+total_time_min: 5
+servings: 1
+ingredients:
+- name: Plain Greek yogurt
+  grams: 200
+  fdc_query: Yogurt, Greek, plain, lowfat
+  fdc_id: 170903
+  fdc_description: Yogurt, Greek, plain, lowfat
+  fdc_verified: false
+- name: Pear
+  grams: 150
+  fdc_query: Pears, raw
+  fdc_id: 169118
+  fdc_description: Pears, raw
+  fdc_verified: false
+- name: Walnuts
+  grams: 15
+  fdc_query: Nuts, walnuts, english
+  fdc_id: 170187
+  fdc_description: Nuts, walnuts, english
+  fdc_verified: false
+- name: Ground cinnamon
+  grams: 1
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+evidence_tags:
+- calcium
+- cinnamon
+- protein_first
+- low_sodium
+steps:
+- Dice the pear.
+- Spoon over yogurt and top with walnuts and cinnamon.
+notes: Pumpkin seeds replace walnuts for tree-nut allergies.

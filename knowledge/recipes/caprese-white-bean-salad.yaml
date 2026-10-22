@@ -1,0 +1,62 @@
+id: caprese-white-bean-salad
+name: Caprese white bean salad with toast
+meal_type: lunch
+diets:
+- omnivore
+- vegetarian
+allergens:
+- milk
+- wheat
+active_time_min: 8
+total_time_min: 8
+servings: 1
+ingredients:
+- name: Part-skim mozzarella
+  grams: 60
+  fdc_query: Cheese, mozzarella, part skim milk
+  fdc_id: 170847
+  fdc_description: Cheese, mozzarella, part skim milk
+  fdc_verified: false
+- name: Tomato
+  grams: 150
+  fdc_query: Tomatoes, red, ripe, raw, year round average
+  fdc_id: 170457
+  fdc_description: Tomatoes, red, ripe, raw, year round average
+  fdc_verified: false
+- name: Cannellini beans, no salt added, drained
+  grams: 100
+  fdc_query: Beans, white, mature seeds, cooked, boiled, without salt
+  fdc_id: 175203
+  fdc_description: Beans, white, mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Fresh basil
+  grams: 5
+  fdc_query: Basil, fresh
+  fdc_id: 172232
+  fdc_description: Basil, fresh
+  fdc_verified: false
+- name: Balsamic vinegar
+  grams: 10
+  fdc_query: Vinegar, balsamic
+  fdc_id: 172241
+  fdc_description: Vinegar, balsamic
+  fdc_verified: false
+- name: Olive oil
+  grams: 7
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Whole-wheat bread
+  grams: 40
+  fdc_query: Bread, whole-wheat, commercially prepared
+  fdc_id: 172688
+  fdc_description: Bread, whole-wheat, commercially prepared
+  fdc_verified: false
+evidence_tags:
+- calcium
+- protein_first
+- vitamin_c
+steps:
+- Slice tomatoes and mozzarella; toss with beans and basil.
+- Dress with balsamic and oil; serve with toast.

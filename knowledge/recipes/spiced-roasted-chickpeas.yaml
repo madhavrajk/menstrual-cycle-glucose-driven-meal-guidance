@@ -1,0 +1,44 @@
+id: spiced-roasted-chickpeas
+name: Spiced roasted chickpeas
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 5
+total_time_min: 35
+servings: 2
+ingredients:
+- name: Canned chickpeas, no salt added, drained
+  grams: 240
+  fdc_query: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+  fdc_id: 173757
+  fdc_description: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Olive oil
+  grams: 8
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Paprika
+  grams: 2
+  fdc_query: Spices, paprika
+  fdc_id: 171329
+  fdc_description: Spices, paprika
+  fdc_verified: false
+- name: Ground cumin
+  grams: 1
+  fdc_query: Spices, cumin seed
+  fdc_id: 170923
+  fdc_description: Spices, cumin seed
+  fdc_verified: false
+evidence_tags:
+- iron
+- b6
+- magnesium
+- low_sodium
+steps:
+- Pat chickpeas dry and toss with oil and spices.
+- Roast at 200 °C for 30 minutes, shaking halfway.

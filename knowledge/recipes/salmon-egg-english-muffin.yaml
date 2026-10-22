@@ -1,0 +1,46 @@
+id: salmon-egg-english-muffin
+name: Salmon and egg English muffin
+meal_type: breakfast
+diets:
+- omnivore
+allergens:
+- fish
+- egg
+- wheat
+active_time_min: 10
+total_time_min: 10
+servings: 1
+ingredients:
+- name: Canned pink salmon, with bones
+  grams: 60
+  fdc_query: Fish, salmon, pink, canned, drained solids with bone
+  fdc_id: 175175
+  fdc_description: Fish, salmon, pink, canned, drained solids
+  fdc_verified: true
+- name: Eggs
+  grams: 50
+  fdc_query: Egg, whole, raw, fresh
+  fdc_id: 171287
+  fdc_description: Egg, whole, raw, fresh
+  fdc_verified: false
+- name: Whole-wheat English muffin
+  grams: 66
+  fdc_query: English muffins, whole-wheat
+  fdc_id: 172762
+  fdc_description: Muffins, English, whole-wheat
+  fdc_verified: true
+- name: Baby spinach
+  grams: 30
+  fdc_query: Spinach, raw
+  fdc_id: 168462
+  fdc_description: Spinach, raw
+  fdc_verified: false
+evidence_tags:
+- omega3
+- calcium
+- protein_first
+- b6
+steps:
+- Fry or scramble the egg.
+- Toast the muffin and layer spinach, flaked salmon, and egg.
+notes: Canned salmon with its soft bones adds calcium as well as omega-3.

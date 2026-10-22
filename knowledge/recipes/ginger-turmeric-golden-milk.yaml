@@ -1,0 +1,50 @@
+id: ginger-turmeric-golden-milk
+name: Ginger turmeric golden milk
+meal_type: snack
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens:
+- soy
+active_time_min: 3
+total_time_min: 8
+servings: 1
+ingredients:
+- name: Fortified soy milk
+  grams: 240
+  fdc_query: Soymilk, original and vanilla, with added calcium, vitamins A and D
+  fdc_id: 172456
+  fdc_description: Soymilk, original and vanilla, with added calcium, vitamins A and D
+  fdc_verified: false
+- name: Fresh ginger, grated
+  grams: 5
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Ground turmeric
+  grams: 2
+  fdc_query: Spices, turmeric, ground
+  fdc_id: 172231
+  fdc_description: Spices, turmeric, ground
+  fdc_verified: false
+- name: Ground cinnamon
+  grams: 1
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+- name: Maple syrup
+  grams: 5
+  fdc_query: Syrups, maple
+  fdc_id: 169661
+  fdc_description: Syrups, maple
+  fdc_verified: false
+evidence_tags:
+- ginger
+- cinnamon
+- calcium
+- low_sodium
+steps:
+- Warm everything gently for 5 minutes; strain out the ginger.

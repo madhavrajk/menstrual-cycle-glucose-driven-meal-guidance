@@ -1,0 +1,23 @@
+id: glucose-spread-carbs
+trigger:
+  target: unstable_glucose
+  fires_on:
+  - forecast
+claim: No trial was found showing that spreading carbohydrates across meals steadies glucose in healthy
+  adults.
+allowed_wording: Today's plan spreads carbs across your meals rather than saving them for one.
+food_tags: []
+foods:
+- no specific foods; this card changes how carbohydrates are distributed across meals
+research_dose: None
+population: None
+source:
+  citation: No supporting trial found (searched October 2026).
+strength: unsupported
+strength_reason: No source found; kept only as general meal-planning guidance.
+cautions:
+- Make no health claim for this card; the explanation may describe the plan but not promise an effect.
+conflicts_with: []
+never_say:
+- this keeps your blood sugar stable
+- prevents energy crashes

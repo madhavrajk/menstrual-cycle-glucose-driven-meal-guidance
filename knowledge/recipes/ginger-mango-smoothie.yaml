@@ -1,0 +1,50 @@
+id: ginger-mango-smoothie
+name: Ginger mango smoothie
+meal_type: breakfast
+diets:
+- omnivore
+- vegetarian
+allergens:
+- milk
+active_time_min: 5
+total_time_min: 5
+servings: 1
+ingredients:
+- name: Plain Greek yogurt
+  grams: 170
+  fdc_query: Yogurt, Greek, plain, lowfat
+  fdc_id: 170903
+  fdc_description: Yogurt, Greek, plain, lowfat
+  fdc_verified: false
+- name: Mango
+  grams: 120
+  fdc_query: Mangos, raw
+  fdc_id: 169910
+  fdc_description: Mangos, raw
+  fdc_verified: false
+- name: Fresh ginger, grated
+  grams: 5
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Baby spinach
+  grams: 30
+  fdc_query: Spinach, raw
+  fdc_id: 168462
+  fdc_description: Spinach, raw
+  fdc_verified: false
+- name: Water
+  grams: 80
+  fdc_query: Beverages, water, tap, drinking
+  fdc_id: 173647
+  fdc_description: Beverages, water, tap, drinking
+  fdc_verified: false
+evidence_tags:
+- ginger
+- calcium
+- vitamin_c
+- protein_first
+steps:
+- Blend everything until smooth.
+notes: Soy yogurt makes it vegan if it is calcium-fortified.

@@ -1,0 +1,58 @@
+id: baked-trout-fennel-potatoes
+name: Baked trout with fennel and potatoes
+meal_type: dinner
+diets:
+- omnivore
+allergens:
+- fish
+active_time_min: 15
+total_time_min: 40
+servings: 1
+ingredients:
+- name: Rainbow trout fillet
+  grams: 150
+  fdc_query: Fish, trout, rainbow, farmed, raw
+  fdc_id: 173717
+  fdc_description: Fish, trout, rainbow, farmed, raw
+  fdc_verified: false
+- name: Fennel bulb, sliced
+  grams: 150
+  fdc_query: Fennel, bulb, raw
+  fdc_id: 2747655
+  fdc_description: Fennel, bulb, raw
+  fdc_verified: false
+- name: Potatoes, with skin
+  grams: 150
+  fdc_query: Potatoes, flesh and skin, raw
+  fdc_id: 170026
+  fdc_description: Potatoes, flesh and skin, raw
+  fdc_verified: false
+- name: Lemon juice
+  grams: 10
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 8
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Fennel seeds
+  grams: 1
+  fdc_query: Spices, fennel seed
+  fdc_id: 171323
+  fdc_description: Spices, fennel seed
+  fdc_verified: false
+evidence_tags:
+- omega3
+- fennel
+- b6
+- low_sodium
+- protein_first
+- vitamin_c
+steps:
+- Roast sliced potato and fennel with oil and fennel seed at 210 °C for 20 minutes.
+- Add trout to the tray and roast 10-12 minutes more.
+- Finish with lemon.

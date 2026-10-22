@@ -1,0 +1,33 @@
+id: cramps-cinnamon-fennel
+trigger:
+  target: cramps
+  fires_on:
+  - forecast
+  - logged
+claim: In a meta-analysis of 9 randomized trials (647 patients), cinnamon, fennel, and ginger each lowered
+  period pain intensity compared with placebo.
+allowed_wording: Some small studies suggest cinnamon or fennel may ease period pain, so this plan includes
+  them.
+food_tags:
+- cinnamon
+- fennel
+foods:
+- cinnamon in oats, yogurt, or baked fruit
+- fennel bulb roasted or in salads
+- fennel seed tea
+research_dose: Supplement capsules or extracts; doses far above what a recipe provides
+population: 647 women with primary dysmenorrhea across 9 trials
+source:
+  citation: 'Xu Y, Yang Q, Wang X. Efficacy of herbal medicine (cinnamon/fennel/ginger) for primary dysmenorrhea:
+    a systematic review and meta-analysis of randomized controlled trials. J Int Med Res 2020;48(6).'
+  url: https://pubmed.ncbi.nlm.nih.gov/32603204/
+strength: low
+strength_reason: Small supplement trials; recipe amounts are much lower.
+cautions:
+- Say that the studies used supplements, not food amounts.
+- Show the severe-pain prompt.
+conflicts_with: []
+never_say:
+- cinnamon treats cramps
+- fennel works like a painkiller
+- any dose

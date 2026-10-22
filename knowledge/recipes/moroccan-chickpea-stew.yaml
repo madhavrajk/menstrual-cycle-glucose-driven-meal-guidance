@@ -1,0 +1,92 @@
+id: moroccan-chickpea-stew
+name: Moroccan chickpea and squash stew
+meal_type: dinner
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 20
+total_time_min: 50
+servings: 2
+ingredients:
+- name: Canned chickpeas, no salt added, drained
+  grams: 330
+  fdc_query: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+  fdc_id: 173757
+  fdc_description: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Canned tomatoes, no salt added
+  grams: 400
+  fdc_query: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_id: 170138
+  fdc_description: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_verified: false
+- name: Butternut squash, cubed
+  grams: 300
+  fdc_query: Squash, winter, butternut, raw
+  fdc_id: 169295
+  fdc_description: Squash, winter, butternut, raw
+  fdc_verified: false
+- name: Onion
+  grams: 100
+  fdc_query: Onions, raw
+  fdc_id: 170000
+  fdc_description: Onions, raw
+  fdc_verified: false
+- name: Garlic
+  grams: 8
+  fdc_query: Garlic, raw
+  fdc_id: 1104647
+  fdc_description: Garlic, raw
+  fdc_verified: false
+- name: Fresh ginger, grated
+  grams: 8
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Ground cinnamon
+  grams: 2
+  fdc_query: Spices, cinnamon, ground
+  fdc_id: 171320
+  fdc_description: Spices, cinnamon, ground
+  fdc_verified: false
+- name: Ground cumin
+  grams: 3
+  fdc_query: Spices, cumin seed
+  fdc_id: 170923
+  fdc_description: Spices, cumin seed
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Baby spinach
+  grams: 60
+  fdc_query: Spinach, raw
+  fdc_id: 168462
+  fdc_description: Spinach, raw
+  fdc_verified: false
+- name: Water
+  grams: 200
+  fdc_query: Beverages, water, tap, drinking
+  fdc_id: 173647
+  fdc_description: Beverages, water, tap, drinking
+  fdc_verified: false
+evidence_tags:
+- cinnamon
+- ginger
+- iron
+- b6
+- magnesium
+- vitamin_c
+- low_sodium
+- plant_based
+steps:
+- Soften onion, garlic, and ginger in oil with the spices.
+- Add squash, tomatoes, chickpeas, and water; simmer 30 minutes.
+- Stir in spinach.
+notes: High in fiber; not a first pick on predicted bloating days.

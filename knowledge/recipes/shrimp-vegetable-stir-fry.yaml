@@ -1,0 +1,76 @@
+id: shrimp-vegetable-stir-fry
+name: Ginger shrimp and vegetable stir-fry
+meal_type: dinner
+diets:
+- omnivore
+allergens:
+- shellfish
+- soy
+- wheat
+active_time_min: 15
+total_time_min: 20
+servings: 1
+ingredients:
+- name: Raw shrimp, peeled
+  grams: 120
+  fdc_query: Crustaceans, shrimp, raw
+  fdc_id: 175179
+  fdc_description: Crustaceans, shrimp, raw
+  fdc_verified: false
+- name: Broccoli
+  grams: 100
+  fdc_query: Broccoli, raw
+  fdc_id: 747447
+  fdc_description: Broccoli, raw
+  fdc_verified: false
+- name: Snap peas
+  grams: 80
+  fdc_query: Peas, edible-podded, raw
+  fdc_id: 170010
+  fdc_description: Peas, edible-podded, raw
+  fdc_verified: false
+- name: Red bell pepper
+  grams: 60
+  fdc_query: Peppers, sweet, red, raw
+  fdc_id: 170108
+  fdc_description: Peppers, sweet, red, raw
+  fdc_verified: false
+- name: Fresh ginger, grated
+  grams: 6
+  fdc_query: Ginger root, raw
+  fdc_id: 169231
+  fdc_description: Ginger root, raw
+  fdc_verified: false
+- name: Garlic
+  grams: 5
+  fdc_query: Garlic, raw
+  fdc_id: 1104647
+  fdc_description: Garlic, raw
+  fdc_verified: false
+- name: Low-sodium soy sauce
+  grams: 10
+  fdc_query: Soy sauce, made from soy and wheat (shoyu), low sodium
+  fdc_id: 172473
+  fdc_description: Soy sauce made from soy and wheat (shoyu), low sodium
+  fdc_verified: false
+- name: Canola oil
+  grams: 8
+  fdc_query: Oil, canola
+  fdc_id: 748278
+  fdc_description: Oil, canola
+  fdc_verified: false
+- name: Cooked brown rice
+  grams: 150
+  fdc_query: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+  fdc_id: 169704
+  fdc_description: Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+  fdc_verified: true
+evidence_tags:
+- ginger
+- protein_first
+- vitamin_c
+steps:
+- Stir-fry shrimp in oil for 2 minutes and set aside.
+- Stir-fry vegetables, ginger, and garlic for 4 minutes.
+- Return shrimp, add soy sauce, and serve over rice.
+notes: Some frozen shrimp is treated with salt; check the label on bloating days.

@@ -1,0 +1,54 @@
+id: chicken-sweet-potato-tray-bake
+name: Chicken and sweet potato tray bake
+meal_type: dinner
+diets:
+- omnivore
+allergens: []
+active_time_min: 10
+total_time_min: 40
+servings: 1
+ingredients:
+- name: Chicken thigh, skinless
+  grams: 150
+  fdc_query: Chicken, broilers or fryers, thigh, meat only, raw
+  fdc_id: 173627
+  fdc_description: Chicken, broilers or fryers, dark meat, thigh, meat only, raw
+  fdc_verified: true
+- name: Sweet potato
+  grams: 200
+  fdc_query: Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)
+  fdc_id: 168482
+  fdc_description: Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)
+  fdc_verified: true
+- name: Cauliflower
+  grams: 120
+  fdc_query: Cauliflower, raw
+  fdc_id: 2685573
+  fdc_description: Cauliflower, raw
+  fdc_verified: false
+- name: Onion
+  grams: 60
+  fdc_query: Onions, raw
+  fdc_id: 170000
+  fdc_description: Onions, raw
+  fdc_verified: false
+- name: Paprika
+  grams: 2
+  fdc_query: Spices, paprika
+  fdc_id: 171329
+  fdc_description: Spices, paprika
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- b6
+- vitamin_c
+- protein_first
+- low_sodium
+steps:
+- Toss everything with oil and paprika.
+- Roast at 210 °C for 30-35 minutes.

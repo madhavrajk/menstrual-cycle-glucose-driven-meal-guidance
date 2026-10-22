@@ -1,0 +1,59 @@
+id: salmon-quinoa-bowl
+name: Salmon quinoa bowl with kale and cucumber
+meal_type: lunch
+diets:
+- omnivore
+allergens:
+- fish
+active_time_min: 15
+total_time_min: 25
+servings: 1
+ingredients:
+- name: Salmon fillet
+  grams: 120
+  fdc_query: Fish, salmon, Atlantic, farmed, raw
+  fdc_id: 175167
+  fdc_description: Fish, salmon, Atlantic, farmed, raw
+  fdc_verified: false
+- name: Cooked quinoa
+  grams: 150
+  fdc_query: Quinoa, cooked
+  fdc_id: 168917
+  fdc_description: Quinoa, cooked
+  fdc_verified: false
+- name: Kale
+  grams: 40
+  fdc_query: Kale, raw
+  fdc_id: 168421
+  fdc_description: Kale, raw
+  fdc_verified: false
+- name: Cucumber
+  grams: 80
+  fdc_query: Cucumber, with peel, raw
+  fdc_id: 2346406
+  fdc_description: Cucumber, with peel, raw
+  fdc_verified: false
+- name: Lemon juice
+  grams: 15
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 7
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+evidence_tags:
+- omega3
+- protein_first
+- magnesium
+- b6
+- vitamin_c
+- low_gi
+- low_sodium
+steps:
+- Bake salmon at 200 °C for 12-15 minutes.
+- Massage kale with lemon and oil; toss with quinoa and cucumber.
+- Top with the salmon.

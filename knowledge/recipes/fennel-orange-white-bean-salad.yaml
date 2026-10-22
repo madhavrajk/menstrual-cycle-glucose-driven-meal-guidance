@@ -1,0 +1,59 @@
+id: fennel-orange-white-bean-salad
+name: Fennel, orange, and white bean salad
+meal_type: lunch
+diets:
+- omnivore
+- vegetarian
+- vegan
+allergens: []
+active_time_min: 10
+total_time_min: 10
+servings: 1
+ingredients:
+- name: Fennel bulb, sliced
+  grams: 150
+  fdc_query: Fennel, bulb, raw
+  fdc_id: 2747655
+  fdc_description: Fennel, bulb, raw
+  fdc_verified: false
+- name: Orange, segmented
+  grams: 130
+  fdc_query: Oranges, raw, all commercial varieties
+  fdc_id: 169097
+  fdc_description: Oranges, raw, all commercial varieties
+  fdc_verified: false
+- name: Cannellini beans, no salt added, drained
+  grams: 130
+  fdc_query: Beans, white, mature seeds, cooked, boiled, without salt
+  fdc_id: 175203
+  fdc_description: Beans, white, mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Arugula
+  grams: 30
+  fdc_query: Arugula, raw
+  fdc_id: 169387
+  fdc_description: Arugula, raw
+  fdc_verified: false
+- name: Olive oil
+  grams: 10
+  fdc_query: Oil, olive, salad or cooking
+  fdc_id: 171413
+  fdc_description: Oil, olive, salad or cooking
+  fdc_verified: false
+- name: Lemon juice
+  grams: 10
+  fdc_query: Lemon juice, raw
+  fdc_id: 167747
+  fdc_description: Lemon juice, raw
+  fdc_verified: false
+evidence_tags:
+- fennel
+- vitamin_c
+- iron
+- magnesium
+- low_sodium
+- plant_based
+steps:
+- Slice fennel thinly; segment the orange.
+- Toss with beans and arugula; dress with oil and lemon.
+notes: Fennel bulb is far below trial doses; the card must say the studies used supplements.

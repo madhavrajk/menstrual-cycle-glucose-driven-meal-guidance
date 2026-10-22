@@ -13,7 +13,7 @@ endif
 STEP1_HOME = $(shell $(PY) -c "from mealguide import paths; print(paths.HOME)")
 STEP1 = "$(CURDIR)/scripts/step1_data"
 
-.PHONY: setup data synthetic step1 cgm features baselines fdc nutrition test lint
+.PHONY: setup data synthetic step1 cgm features baselines fdc nutrition coverage test lint
 
 setup:
 	$(PY) -m pip install -r requirements.txt
@@ -55,6 +55,10 @@ fdc:
 # Step 3 (Sneha): per-serving nutrients for the 3 starter recipes (or RECIPES="id1 id2")
 nutrition:
 	$(PY) -m mealguide.guidance.nutrition $(RECIPES)
+
+# Step 3 (Sneha): nutrition for all recipes, tag audit, and coverage by card, diet, and meal
+coverage:
+	$(PY) -m mealguide.guidance.coverage $(if $(FIX),--fix)
 
 test:
 	$(PY) -m pytest -q

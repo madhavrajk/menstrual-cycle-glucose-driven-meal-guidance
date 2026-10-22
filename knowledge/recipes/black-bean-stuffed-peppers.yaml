@@ -1,0 +1,71 @@
+id: black-bean-stuffed-peppers
+name: Black bean and quinoa stuffed peppers
+meal_type: dinner
+diets:
+- omnivore
+- vegetarian
+allergens:
+- milk
+active_time_min: 15
+total_time_min: 45
+servings: 2
+ingredients:
+- name: Red bell pepper
+  grams: 300
+  fdc_query: Peppers, sweet, red, raw
+  fdc_id: 170108
+  fdc_description: Peppers, sweet, red, raw
+  fdc_verified: false
+- name: Black beans, no salt added, drained
+  grams: 170
+  fdc_query: Beans, black, mature seeds, cooked, boiled, without salt
+  fdc_id: 173735
+  fdc_description: Beans, black, mature seeds, cooked, boiled, without salt
+  fdc_verified: false
+- name: Cooked quinoa
+  grams: 185
+  fdc_query: Quinoa, cooked
+  fdc_id: 168917
+  fdc_description: Quinoa, cooked
+  fdc_verified: false
+- name: Frozen corn
+  grams: 80
+  fdc_query: Corn, sweet, yellow, frozen, kernels cut off cob, unprepared
+  fdc_id: 168544
+  fdc_description: Corn, sweet, white, frozen, kernels cut off cob, unprepared
+  fdc_verified: true
+- name: Cheddar cheese
+  grams: 40
+  fdc_query: Cheese, cheddar
+  fdc_id: 328637
+  fdc_description: Cheese, cheddar
+  fdc_verified: false
+- name: Canned tomatoes, no salt added
+  grams: 100
+  fdc_query: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_id: 170138
+  fdc_description: Tomatoes, red, ripe, canned, packed in tomato juice, no salt added
+  fdc_verified: false
+- name: Ground cumin
+  grams: 2
+  fdc_query: Spices, cumin seed
+  fdc_id: 170923
+  fdc_description: Spices, cumin seed
+  fdc_verified: false
+- name: Chili powder
+  grams: 2
+  fdc_query: Spices, chili powder
+  fdc_id: 171319
+  fdc_description: Spices, chili powder
+  fdc_verified: false
+evidence_tags:
+- iron
+- magnesium
+- vitamin_c
+- calcium
+- low_gi
+steps:
+- Halve and seed the peppers.
+- Mix beans, quinoa, corn, tomatoes, and spices; fill the peppers.
+- Top with cheddar and bake at 190 °C for 30 minutes.
+notes: Skip the cheese for a vegan version (loses the calcium tag).
