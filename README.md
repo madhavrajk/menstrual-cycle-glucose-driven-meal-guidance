@@ -40,11 +40,14 @@ make baselines SYNTHETIC=1    # whole Step 2 pipeline on fake data (no access ne
 
 make step1                    # Ava's pipeline: zip -> daily_master_labeled.csv
 make baselines                # CGM metrics + Fitbit features + baselines on real Interval 1 data
+make model                    # first watch-only logistic regression vs the baselines
 ```
 
 `make baselines` prints AUROC/AUPRC for the persistence and per-person base-rate baselines,
 for next-day high-CV glucose and each symptom, with 95% participant-bootstrap CIs. It also
-writes `results/baselines_real.csv`.
+writes `results/baselines_real.csv`. `make model` adds a watch-only logistic regression
+(nighttime HR, HRV, skin temperature, resting HR, sleep, steps) and writes
+`results/first_model_real.csv`.
 
 ## Layout
 
