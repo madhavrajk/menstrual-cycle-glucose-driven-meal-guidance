@@ -188,7 +188,7 @@ def write_note(output, models, quality, synthetic=False):
         ("Sensitivity analyses", "Original Mira, qualifying cycles for both schemes, 60% and 80% "
          "coverage: all fits and contrasts in model_results.json; differences from primary in "
          "sensitivity.csv. Qualifying-peak restriction is redundant for primary LH labels."),
-        ("Whether the hypothesized glucose pattern replicated", 
+        ("Whether the hypothesized glucose pattern replicated",
          ("No real research conclusions from synthetic tests." if synthetic
           else conclusion + " " + proxy)),
         ("Limitations", "Selection from complete cycles and missingness; provisional LH timing; "
