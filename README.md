@@ -38,6 +38,7 @@ make data SRC=~/Downloads/<your mcPHASES download>   # zip or folder; verifies c
 make test                     # unit + leakage tests
 make baselines SYNTHETIC=1    # whole Step 2 pipeline on fake data (no access needed)
 
+make step1-replication        # complete Step 1 glucose analysis, local outputs only
 make step1                    # Ava's pipeline: zip -> daily_master_labeled.csv
 make baselines                # CGM metrics + Fitbit features + baselines on real Interval 1 data
 ```
@@ -64,3 +65,5 @@ src/mealguide/
 knowledge/            recipes + evidence cards (Sneha)
 notebooks/  app/  results/  tests/
 ```
+
+Step 1 methods, local Terminal instructions and output details: [docs/step1_replication.md](docs/step1_replication.md).

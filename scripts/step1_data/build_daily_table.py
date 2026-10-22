@@ -45,7 +45,7 @@ df["interval_label"] = df["study_interval"].map({
 })
 
 # Check the join keys
-keys = ["id", "day_in_study"]
+keys = ["id", "study_interval", "day_in_study"]
 
 assert not df.duplicated(keys).any(), "Duplicate daily keys!"
 assert df[keys].notna().all().all(), "Missing join keys!"

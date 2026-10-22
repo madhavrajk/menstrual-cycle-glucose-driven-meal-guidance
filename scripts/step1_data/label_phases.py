@@ -138,13 +138,20 @@ for (pid, interval), group in df.groupby(
             "phase_quality": quality
         })
 
+from mealguide.phases.calendar import calendar_phases
+
+df = calendar_phases(df)
+
 # Save labeled dataset separately
 df.to_csv(
     DATA / "daily_master_labeled.csv",
     index=False
 )
 
-cycles = pd.DataFrame(cycle_records)
+cycles = pd.DataFrame(cycle_records, columns=[
+    "cycle_id", "id", "study_interval", "start_day", "end_day_exclusive",
+    "cycle_length", "lh_peak_day", "peak_lh", "phase_quality"
+])
 cycles.to_csv(
     DATA / "cycle_summary.csv",
     index=False

@@ -65,3 +65,8 @@ test:
 
 lint:
 	ruff check .
+
+# Step 1: regenerate labels and run all replication analyses locally.
+.PHONY: step1-replication
+step1-replication: $(if $(SYNTHETIC),synthetic,step1)
+	$(PY) -m mealguide.phases.replication $(FLAG)
