@@ -1,8 +1,9 @@
-"""Step 2 pipeline: CGM metrics -> Fitbit features -> targets -> baselines.
+"""Step 2 pipeline: CGM metrics -> Fitbit features -> targets -> baselines -> models.
 
     python -m mealguide.pipeline cgm        [--synthetic]
     python -m mealguide.pipeline features   [--synthetic]
     python -m mealguide.pipeline baselines  [--synthetic]
+    python -m mealguide.pipeline model      [--synthetic]
 
 Real-data outputs go to $MCPHASES_HOME/data/processed/ (never committed). Synthetic outputs
 go to data/synthetic/. The baselines step also writes aggregate metrics only to results/.
@@ -19,7 +20,8 @@ from mealguide.cgm.targets import add_next_day, label_high_cv, symptom_high
 from mealguide.data.io import read_daily_table, read_table
 from mealguide.features.fitbit_daily import fitbit_daily
 from mealguide.models.baselines import persistence, person_base_rate
-from mealguide.models.harness import evaluate
+from mealguide.models.harness import evaluate, loso_predict
+from mealguide.models.logistic import WATCH_FEATURES, make_lr
 
 SYMPTOMS = ["fatigue", "cramps", "bloating", "cravings"]
 
@@ -77,40 +79,69 @@ def build_model_table(synthetic: bool) -> pd.DataFrame:
     return df
 
 
-def run_baselines(synthetic: bool) -> pd.DataFrame:
-    df = build_model_table(synthetic)
-    tasks = [("high_cv", "glucose_cv")] + [(f"{s}_high", f"{s}_score") for s in SYMPTOMS]
+TASKS = [("high_cv", "glucose_cv")] + [(f"{s}_high", f"{s}_score") for s in SYMPTOMS]
 
-    rows = []
-    for target, today_signal in tasks:
-        y = f"{target}_next"
-        df["score_persistence"] = persistence(df, today_signal)
-        df["score_base_rate"] = person_base_rate(df, y)
-        for baseline in ("persistence", "base_rate"):
-            rows.append({"target": f"next-day {target}", "baseline": baseline,
-                         **evaluate(df, y, f"score_{baseline}")})
-    results = pd.DataFrame(rows)
 
+def _baseline_rows(df: pd.DataFrame, target: str, today_signal: str) -> list[dict]:
+    y = f"{target}_next"
+    df["score_persistence"] = persistence(df, today_signal)
+    df["score_base_rate"] = person_base_rate(df, y)
+    return [{"target": f"next-day {target}", "baseline": baseline,
+             **evaluate(df, y, f"score_{baseline}")}
+            for baseline in ("persistence", "base_rate")]
+
+
+def _save_and_print(results: pd.DataFrame, name: str, title: str, synthetic: bool) -> None:
     source = "synthetic" if synthetic else "real"
     paths.RESULTS.mkdir(exist_ok=True)
-    results.round(4).to_csv(paths.RESULTS / f"baselines_{source}.csv", index=False)
-
-    print(f"\nBaselines on {source} Interval 1 data (LOSO, 95% participant-bootstrap CI)")
+    results.round(4).to_csv(paths.RESULTS / f"{name}_{source}.csv", index=False)
+    print(f"\n{title} on {source} Interval 1 data (LOSO, 95% participant-bootstrap CI)")
     for r in results.itertuples():
         print(f"  {r.target:<22} {r.baseline:<12} "
               f"AUROC {r.auroc:.3f} [{r.auroc_lo:.3f}, {r.auroc_hi:.3f}]  "
               f"AUPRC {r.auprc:.3f} [{r.auprc_lo:.3f}, {r.auprc_hi:.3f}]  "
               f"prev {r.prevalence:.2f}  n={r.n_days} days / {r.n_participants} ppl")
+
+
+def run_baselines(synthetic: bool) -> pd.DataFrame:
+    df = build_model_table(synthetic)
+    results = pd.DataFrame([row for target, signal in TASKS
+                            for row in _baseline_rows(df, target, signal)])
+    _save_and_print(results, "baselines", "Baselines", synthetic)
+    return results
+
+
+def run_model(synthetic: bool) -> pd.DataFrame:
+    """Watch-only logistic regression for every target, next to both baselines.
+
+    The model is scored on every row with a known next-day outcome; baselines skip rows
+    where their own input is missing, so compare n as well as AUROC.
+    """
+    df = build_model_table(synthetic)
+    missing = [c for c in WATCH_FEATURES if c not in df]
+    if missing:
+        raise KeyError(f"Missing features {missing}. Rerun `make features` "
+                       f"(fitbit_daily.csv predates the new features).")
+    rows = []
+    for target, signal in TASKS:
+        rows += _baseline_rows(df, target, signal)
+        y = f"{target}_next"
+        df["score_lr_watch"] = loso_predict(df, WATCH_FEATURES, y, make_lr)
+        rows.append({"target": f"next-day {target}", "baseline": "lr_watch",
+                     **evaluate(df, y, "score_lr_watch")})
+    results = pd.DataFrame(rows)
+    _save_and_print(results, "first_model", "Watch-only LR vs baselines", synthetic)
     return results
 
 
 def main():
     parser = argparse.ArgumentParser(description="Step 2 forecasting pipeline")
-    parser.add_argument("step", choices=["cgm", "features", "baselines"])
+    parser.add_argument("step", choices=["cgm", "features", "baselines", "model"])
     parser.add_argument("--synthetic", action="store_true", help="use data/synthetic/")
     args = parser.parse_args()
-    {"cgm": run_cgm, "features": run_features, "baselines": run_baselines}[args.step](
-        args.synthetic)
+    steps = {"cgm": run_cgm, "features": run_features, "baselines": run_baselines,
+             "model": run_model}
+    steps[args.step](args.synthetic)
 
 
 if __name__ == "__main__":
