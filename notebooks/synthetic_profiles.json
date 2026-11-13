@@ -1,0 +1,244 @@
+[
+  {
+    "profile_id": "synthetic-01",
+    "diet": "omnivore",
+    "allergies": [],
+    "max_active_min": 15,
+    "height_cm": 155,
+    "weight_kg": 55,
+    "age": 24,
+    "goal": "maintain"
+  },
+  {
+    "profile_id": "synthetic-02",
+    "diet": "vegetarian",
+    "allergies": [
+      "milk"
+    ],
+    "max_active_min": 20,
+    "height_cm": 158,
+    "weight_kg": 60,
+    "age": 25,
+    "goal": "lose"
+  },
+  {
+    "profile_id": "synthetic-03",
+    "diet": "vegan",
+    "allergies": [
+      "peanuts"
+    ],
+    "max_active_min": 30,
+    "height_cm": 161,
+    "weight_kg": 65,
+    "age": 26,
+    "goal": "gain"
+  },
+  {
+    "profile_id": "synthetic-04",
+    "diet": "omnivore",
+    "allergies": [
+      "tree_nuts",
+      "sesame"
+    ],
+    "max_active_min": 40,
+    "height_cm": 164,
+    "weight_kg": 70,
+    "age": 27,
+    "goal": "maintain"
+  },
+  {
+    "profile_id": "synthetic-05",
+    "diet": "vegetarian",
+    "allergies": [
+      "wheat"
+    ],
+    "max_active_min": 15,
+    "height_cm": 167,
+    "weight_kg": 75,
+    "age": 28,
+    "goal": "lose"
+  },
+  {
+    "profile_id": "synthetic-06",
+    "diet": "vegan",
+    "allergies": [
+      "soy"
+    ],
+    "max_active_min": 20,
+    "height_cm": 170,
+    "weight_kg": 80,
+    "age": 29,
+    "goal": "gain"
+  },
+  {
+    "profile_id": "synthetic-07",
+    "diet": "omnivore",
+    "allergies": [
+      "egg",
+      "fish"
+    ],
+    "max_active_min": 30,
+    "height_cm": 173,
+    "weight_kg": 85,
+    "age": 30,
+    "goal": "maintain"
+  },
+  {
+    "profile_id": "synthetic-08",
+    "diet": "vegetarian",
+    "allergies": [
+      "shellfish"
+    ],
+    "max_active_min": 40,
+    "height_cm": 176,
+    "weight_kg": 90,
+    "age": 31,
+    "goal": "lose"
+  },
+  {
+    "profile_id": "synthetic-09",
+    "diet": "vegan",
+    "allergies": [
+      "milk",
+      "egg"
+    ],
+    "max_active_min": 15,
+    "height_cm": 179,
+    "weight_kg": 95,
+    "age": 32,
+    "goal": "gain"
+  },
+  {
+    "profile_id": "synthetic-10",
+    "diet": "omnivore",
+    "allergies": [
+      "fish"
+    ],
+    "max_active_min": 20,
+    "height_cm": 182,
+    "weight_kg": 100,
+    "age": 33,
+    "goal": "maintain"
+  },
+  {
+    "profile_id": "synthetic-11",
+    "diet": "vegetarian",
+    "allergies": [],
+    "max_active_min": 30,
+    "height_cm": 155,
+    "weight_kg": 55,
+    "age": 34,
+    "goal": "lose"
+  },
+  {
+    "profile_id": "synthetic-12",
+    "diet": "vegan",
+    "allergies": [
+      "milk"
+    ],
+    "max_active_min": 40,
+    "height_cm": 158,
+    "weight_kg": 60,
+    "age": 35,
+    "goal": "gain"
+  },
+  {
+    "profile_id": "synthetic-13",
+    "diet": "omnivore",
+    "allergies": [
+      "peanuts"
+    ],
+    "max_active_min": 15,
+    "height_cm": 161,
+    "weight_kg": 65,
+    "age": 24,
+    "goal": "maintain"
+  },
+  {
+    "profile_id": "synthetic-14",
+    "diet": "vegetarian",
+    "allergies": [
+      "tree_nuts",
+      "sesame"
+    ],
+    "max_active_min": 20,
+    "height_cm": 164,
+    "weight_kg": 70,
+    "age": 25,
+    "goal": "lose"
+  },
+  {
+    "profile_id": "synthetic-15",
+    "diet": "vegan",
+    "allergies": [
+      "wheat"
+    ],
+    "max_active_min": 30,
+    "height_cm": 167,
+    "weight_kg": 75,
+    "age": 26,
+    "goal": "gain"
+  },
+  {
+    "profile_id": "synthetic-16",
+    "diet": "omnivore",
+    "allergies": [
+      "soy"
+    ],
+    "max_active_min": 40,
+    "height_cm": 170,
+    "weight_kg": 80,
+    "age": 27,
+    "goal": "maintain"
+  },
+  {
+    "profile_id": "synthetic-17",
+    "diet": "vegetarian",
+    "allergies": [
+      "egg",
+      "fish"
+    ],
+    "max_active_min": 15,
+    "height_cm": 173,
+    "weight_kg": 85,
+    "age": 28,
+    "goal": "lose"
+  },
+  {
+    "profile_id": "synthetic-18",
+    "diet": "vegan",
+    "allergies": [
+      "shellfish"
+    ],
+    "max_active_min": 20,
+    "height_cm": 176,
+    "weight_kg": 90,
+    "age": 29,
+    "goal": "gain"
+  },
+  {
+    "profile_id": "synthetic-19",
+    "diet": "omnivore",
+    "allergies": [
+      "milk",
+      "egg"
+    ],
+    "max_active_min": 30,
+    "height_cm": 179,
+    "weight_kg": 95,
+    "age": 30,
+    "goal": "maintain"
+  },
+  {
+    "profile_id": "synthetic-20",
+    "diet": "vegetarian",
+    "allergies": [
+      "fish"
+    ],
+    "max_active_min": 40,
+    "height_cm": 182,
+    "weight_kg": 100,
+    "age": 31,
+    "goal": "lose"
+  }
+]

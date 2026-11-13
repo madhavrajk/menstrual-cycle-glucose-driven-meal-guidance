@@ -140,7 +140,9 @@ for (pid, interval), group in df.groupby(
 
 from mealguide.phases.calendar import calendar_phases
 
-df = calendar_phases(df)
+from mealguide.phases.partial import extend_lh_phases
+
+df = extend_lh_phases(calendar_phases(df), starts)
 
 # Save labeled dataset separately
 df.to_csv(
@@ -179,6 +181,7 @@ if not cycles.empty:
 print("\n=== PHASE COVERAGE ===")
 print("Total days:", len(df))
 print("Days assigned:", df["lh_phase"].notna().sum())
+print("Days assigned with exploratory edge cycles:", df["lh_phase_expanded"].notna().sum())
 
 print("\n=== MIRA VS LH-DERIVED PHASES ===")
 print(matrix)

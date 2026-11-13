@@ -99,3 +99,32 @@ end-to-end figure/report run. Tests do not require mcPHASES. Run `make lint` as 
 Previous 70/59/11 cycle totals, 1,746 labeled days and ~88% agreement are only compared
 when authorized local data are present. Agreement does not measure glucose replication,
 clinical phase accuracy or predictive accuracy.
+
+## Per-day coverage rules and observed counts
+
+- **Valid CGM day:** at least 202 distinct reading times with glucose values (70% of 288
+  expected five-minute samples). In 2022, 3,108 of 3,698 daily rows joined to CGM, and
+  2,856 met the coverage rule. The primary phase analysis used 1,495 days.
+- **Wear:** count distinct minutes with a positive heart-rate reading and divide by 1,440
+  for the daily fraction. Missing wear remains missing. The current feature code does
+  not impose a binary valid-wear cutoff. The earlier step-record indicator measures
+  data presence only.
+- **Diary day:** at least one nonmissing response among fatigue, cramps, bloating and
+  food cravings. Check availability for each symptom separately when fitting models.
+
+## Exploratory LH coverage expansion
+
+The primary complete-cycle LH rule labeled 1,746 of 5,659 days (30.9%) overall,
+including 1,746 of 3,698 days (47.2%) in 2022. The separate retrospective
+`lh_phase_expanded` field labels 2,337 days (41.3% overall, 63.2% in 2022).
+It adds 330 days after the last observed onset and 261 days before the first.
+No 2024 days were newly labeled.
+
+Only edges with at least three LH measurements in a plausible window and a peak
+of at least 10 and 2.5 times the median qualify. Search windows are 5–30 days after
+the last observed onset or 8–25 days before the first observed onset. Labeling
+extends through no more than 16 days after the peak for start-only cycles, and
+begins four days before the peak for end-only cycles. The observed bleeding override
+still applies. The source column identifies complete cycles and each edge type.
+These heuristic labels are exploratory and can use future observations. They do
+not change the primary analysis and must not enter prospective models.
