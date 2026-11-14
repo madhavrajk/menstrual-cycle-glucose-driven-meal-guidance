@@ -138,13 +138,22 @@ for (pid, interval), group in df.groupby(
             "phase_quality": quality
         })
 
+from mealguide.phases.calendar import calendar_phases
+
+from mealguide.phases.partial import extend_lh_phases
+
+df = extend_lh_phases(calendar_phases(df), starts)
+
 # Save labeled dataset separately
 df.to_csv(
     DATA / "daily_master_labeled.csv",
     index=False
 )
 
-cycles = pd.DataFrame(cycle_records)
+cycles = pd.DataFrame(cycle_records, columns=[
+    "cycle_id", "id", "study_interval", "start_day", "end_day_exclusive",
+    "cycle_length", "lh_peak_day", "peak_lh", "phase_quality"
+])
 cycles.to_csv(
     DATA / "cycle_summary.csv",
     index=False
@@ -172,6 +181,7 @@ if not cycles.empty:
 print("\n=== PHASE COVERAGE ===")
 print("Total days:", len(df))
 print("Days assigned:", df["lh_phase"].notna().sum())
+print("Days assigned with exploratory edge cycles:", df["lh_phase_expanded"].notna().sum())
 
 print("\n=== MIRA VS LH-DERIVED PHASES ===")
 print(matrix)
