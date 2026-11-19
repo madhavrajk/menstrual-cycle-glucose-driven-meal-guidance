@@ -1,0 +1,4 @@
+mode,plans,valid_json_pct,shown_pct,restriction_violation_pct,off_menu_pct,any_unsupported_claim_pct,unsupported_per_plan,strong_claims,dose_mentions,never_say_hits,mean_attempts
+rule,100,100.0,100.0,0.0,0.0,0.0,0.0,0,0,0,0.0
+ungrounded,100,100.0,74.0,26.0,0.0,99.0,3.53,353,0,0,1.0
+grounded,100,100.0,100.0,0.0,0.0,10.0,0.11,11,0,0,1.0

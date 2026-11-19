@@ -44,6 +44,21 @@ make baselines                # CGM metrics + Fitbit features + baselines on rea
 make model                    # first watch-only logistic regression vs the baselines
 ```
 
+Step 3 (meal guidance, synthetic profiles and forecasts only):
+
+```bash
+make plan MODE=rule           # one day's plan, no LLM needed
+make plan                     # same with the grounded LLM (needs `ollama serve`)
+make plan PROFILE=synthetic-07 SCENARIO=luteal_cravings_bloating MODE=ungrounded
+make evaluate LIMIT=4         # RQ3: rule vs ungrounded vs grounded on 4 profiles
+make evaluate                 # all 20 profiles x 5 scenarios x 3 planners (300 plans)
+make rescore                  # re-run only the claims audit on saved plans (no LLM)
+```
+
+The LLM runs locally through [Ollama](https://ollama.com): `ollama pull llama3.1:8b` once,
+then `ollama serve`. Set `OLLAMA_MODEL` in `.env` to try another model. Method and metrics:
+`docs/llm_evaluation.md`; form fields: `docs/preference_form.md`.
+
 `make baselines` prints AUROC/AUPRC for the persistence and per-person base-rate baselines,
 for next-day high-CV glucose and each symptom, with 95% participant-bootstrap CIs. It also
 writes `results/baselines_real.csv`. `make model` adds a watch-only logistic regression

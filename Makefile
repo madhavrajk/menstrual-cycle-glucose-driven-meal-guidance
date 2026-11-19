@@ -13,7 +13,7 @@ endif
 STEP1_HOME = $(shell $(PY) -c "from mealguide import paths; print(paths.HOME)")
 STEP1 = "$(CURDIR)/scripts/step1_data"
 
-.PHONY: setup data synthetic step1 cgm features baselines model fdc nutrition coverage test lint
+.PHONY: setup data synthetic step1 cgm features baselines model fdc nutrition coverage plan evaluate rescore test lint
 
 setup:
 	$(PY) -m pip install -r requirements.txt
@@ -63,6 +63,20 @@ nutrition:
 # Step 3 (Sneha): nutrition for all recipes, tag audit, and coverage by card, diet, and meal
 coverage:
 	$(PY) -m mealguide.guidance.coverage $(if $(FIX),--fix)
+
+# Step 3 (Sneha): one day's plan for a synthetic profile. MODE=rule needs no LLM;
+# grounded/ungrounded need Ollama running (see src/mealguide/guidance/llm.py)
+PROFILE ?= synthetic-01
+SCENARIO ?= menstrual_cramps
+MODE ?= grounded
+plan:
+	$(PY) -m mealguide.guidance.plan --profile $(PROFILE) --scenario $(SCENARIO) --mode $(MODE)
+
+# Step 3 (Sneha): RQ3 evaluation, rule vs ungrounded vs grounded (LIMIT=4 for a quick run)
+evaluate:
+	$(PY) -m mealguide.guidance.evaluate $(if $(LIMIT),--limit $(LIMIT)) $(if $(MODES),--modes $(MODES))
+rescore:
+	$(PY) -m mealguide.guidance.evaluate --rescore
 
 test:
 	$(PY) -m pytest -q
