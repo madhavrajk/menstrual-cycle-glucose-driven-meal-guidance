@@ -69,7 +69,10 @@ def generate(n_participants: int = 8, n_days: int = 60, seed: int = 6998) -> dic
                     s = _score(rng, latent) if diary else None
                     row[name] = SCALE[s] if s is not None else None
                     row[f"{name}_score"] = s
-                row["flow_volume"] = "Moderate" if menses and interval == 2022 else None
+                # Diary days outside menses report no flow, so the calendar rule can see
+                # onsets (it needs an observed non-bleeding day before the first bleed).
+                row["flow_volume"] = ("Moderate" if menses and interval == 2022
+                                      else "Not at all" if diary else None)
                 row["lh_phase"] = phase if (pid + (day // length)) % 2 == 0 else None
                 row["interval_label"] = "Interval 1" if interval == 2022 else "Interval 2"
                 daily.append(row)

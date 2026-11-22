@@ -3,7 +3,8 @@
     python -m mealguide.pipeline cgm        [--synthetic]
     python -m mealguide.pipeline features   [--synthetic]
     python -m mealguide.pipeline baselines  [--synthetic]
-    python -m mealguide.pipeline model      [--synthetic]
+    python -m mealguide.pipeline model      [--synthetic]   full grid (models/step2.py)
+    python -m mealguide.pipeline shap       [--synthetic]   SHAP for the headline model
 
 Real-data outputs go to $MCPHASES_HOME/data/processed/ (never committed). Synthetic outputs
 go to data/synthetic/. The baselines step also writes aggregate metrics only to results/.
@@ -20,8 +21,8 @@ from mealguide.cgm.targets import add_next_day, label_high_cv, symptom_high
 from mealguide.data.io import read_daily_table, read_table
 from mealguide.features.fitbit_daily import fitbit_daily
 from mealguide.models.baselines import persistence, person_base_rate
-from mealguide.models.harness import evaluate, loso_predict
-from mealguide.models.logistic import WATCH_FEATURES, make_lr
+from mealguide.models.harness import evaluate
+from mealguide.phases.calendar import calendar_phases
 
 SYMPTOMS = ["fatigue", "cramps", "bloating", "cravings"]
 
@@ -64,6 +65,8 @@ def _load_or_run(name: str, synthetic: bool, runner) -> pd.DataFrame:
 def build_model_table(synthetic: bool) -> pd.DataFrame:
     """One row per Interval 1 participant-day with today's signals and tomorrow's targets."""
     daily = read_daily_table(synthetic)
+    if "calendar_day" not in daily:  # tables from before Ava's calendar merge
+        daily = calendar_phases(daily)
     cgm = _load_or_run("cgm_daily", synthetic, run_cgm)
     feats = _load_or_run("fitbit_daily", synthetic, run_features)
 
@@ -112,35 +115,22 @@ def run_baselines(synthetic: bool) -> pd.DataFrame:
 
 
 def run_model(synthetic: bool) -> pd.DataFrame:
-    """Watch-only logistic regression for every target, next to both baselines.
+    from mealguide.models.step2 import run_models
+    return run_models(synthetic)
 
-    The model is scored on every row with a known next-day outcome; baselines skip rows
-    where their own input is missing, so compare n as well as AUROC.
-    """
-    df = build_model_table(synthetic)
-    missing = [c for c in WATCH_FEATURES if c not in df]
-    if missing:
-        raise KeyError(f"Missing features {missing}. Rerun `make features` "
-                       f"(fitbit_daily.csv predates the new features).")
-    rows = []
-    for target, signal in TASKS:
-        rows += _baseline_rows(df, target, signal)
-        y = f"{target}_next"
-        df["score_lr_watch"] = loso_predict(df, WATCH_FEATURES, y, make_lr)
-        rows.append({"target": f"next-day {target}", "baseline": "lr_watch",
-                     **evaluate(df, y, "score_lr_watch")})
-    results = pd.DataFrame(rows)
-    _save_and_print(results, "first_model", "Watch-only LR vs baselines", synthetic)
-    return results
+
+def run_shap(synthetic: bool) -> pd.DataFrame:
+    from mealguide.models.step2 import run_shap as _run_shap
+    return _run_shap(synthetic)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Step 2 forecasting pipeline")
-    parser.add_argument("step", choices=["cgm", "features", "baselines", "model"])
+    parser.add_argument("step", choices=["cgm", "features", "baselines", "model", "shap"])
     parser.add_argument("--synthetic", action="store_true", help="use data/synthetic/")
     args = parser.parse_args()
     steps = {"cgm": run_cgm, "features": run_features, "baselines": run_baselines,
-             "model": run_model}
+             "model": run_model, "shap": run_shap}
     steps[args.step](args.synthetic)
 
 

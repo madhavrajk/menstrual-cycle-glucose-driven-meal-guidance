@@ -61,9 +61,12 @@ then `ollama serve`. Set `OLLAMA_MODEL` in `.env` to try another model. Method a
 
 `make baselines` prints AUROC/AUPRC for the persistence and per-person base-rate baselines,
 for next-day high-CV glucose and each symptom, with 95% participant-bootstrap CIs. It also
-writes `results/baselines_real.csv`. `make model` adds a watch-only logistic regression
-(nighttime HR, HRV, skin temperature, resting HR, sleep, steps) and writes
-`results/first_model_real.csv`.
+writes `results/baselines_real.csv`. `make model` runs the full Step 2 grid (LR and
+LightGBM; history, watch, watch+phase, watch+phase+glucose; five targets), compares calendar
+with hormone-confirmed phase, picks the headline model, and writes `results/step2_*`.
+`make shap` explains the headline model. `make forecast ID=3 DAY=40 SYNTHETIC=1` prints one
+`get_forecast` result and the Step 3 triggers it fires. Results and methods:
+`docs/step2_results.md`.
 
 ## Layout
 
@@ -76,7 +79,7 @@ src/mealguide/
   phases/             cycle phase labels (Ava)
   cgm/                daily CGM metrics, targets (Madhav)
   features/           Fitbit daily features, past-only baselines (Madhav)
-  models/             LOSO harness, baselines, models (Madhav)
+  models/             LOSO harness, baselines, Step 2 models, get_forecast (Madhav)
   guidance/           nutrition, portions, retrieval, LLM, checks (Sneha)
   synthetic.py        fake cohort generator
   pipeline.py         Step 2 CLI

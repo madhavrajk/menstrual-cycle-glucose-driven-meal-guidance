@@ -13,7 +13,7 @@ endif
 STEP1_HOME = $(shell $(PY) -c "from mealguide import paths; print(paths.HOME)")
 STEP1 = "$(CURDIR)/scripts/step1_data"
 
-.PHONY: setup data synthetic step1 cgm features baselines model fdc nutrition coverage plan evaluate rescore test lint
+.PHONY: setup data synthetic step1 cgm features baselines model shap forecast fdc nutrition coverage plan evaluate rescore test lint
 
 setup:
 	$(PY) -m pip install -r requirements.txt
@@ -48,9 +48,20 @@ features: $(DATA_DEP)
 baselines: cgm features
 	$(PY) -m mealguide.pipeline baselines $(FLAG)
 
-# First model: watch-only logistic regression vs the baselines (Week 3-4)
+# Full grid: LR + LightGBM x {history, watch, watch+phase, watch+phase+glucose} x 5 targets,
+# calendar vs LH phase, headline choice, risk thresholds (results/step2_*)
 model: cgm features
 	$(PY) -m mealguide.pipeline model $(FLAG)
+
+# SHAP for the headline model (run `make model` first)
+shap:
+	$(PY) -m mealguide.pipeline shap $(FLAG)
+
+# One forecast for Step 3: make forecast ID=3 DAY=40 SYNTHETIC=1
+ID ?= 1
+DAY ?= 30
+forecast:
+	$(PY) -m mealguide.models.forecast_api --id $(ID) --day $(DAY) $(FLAG)
 
 # Step 3 (Sneha): fill missing FoodData Central IDs in knowledge/recipes/ (needs FDC_API_KEY)
 fdc:
