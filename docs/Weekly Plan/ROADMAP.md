@@ -10,6 +10,7 @@ Dec 11 deadline don't move.
 |---|---|---|
 | 2 | Oct 7–15 | [Week Plan, Oct 7–14 (PDF)](week02_oct07-14.pdf), deadline extended to Oct 15 |
 | 3 | Oct 16–22 | [week03_oct16-22.md](week03_oct16-22.md) |
+| 4–10 | Nov 11–Dec 11 | [Catch-Up Plan, Nov 11 onward (PDF)](catchup_nov11-dec11.pdf): Weeks 4–8 compressed into Nov 11–25, Thanksgiving week for evaluation, Dec 3–11 for the report. **Its dates replace the table below.** |
 
 New weeks are added here as they're written.
 
