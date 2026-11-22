@@ -1,8 +1,8 @@
 """The forecast Step 3 receives, and the rules that turn it into fired evidence cards.
 
-Contract with Step 2: Madhav's `get_forecast(id, day)` returns a `Forecast`. Until it lands,
-`synthetic_forecast` makes seeded stand-ins with the same fields, so the pipeline and the
-RQ3 evaluation can run end to end.
+Contract with Step 2: Madhav's `get_forecast(id, day)` (`models/forecast_api.py`) returns a
+`Forecast`. `synthetic_forecast` makes seeded stand-ins with the same fields, so the pipeline
+and the RQ3 evaluation can run end to end.
 
 Trigger rules (from the proposal, in priority order):
 1. Reactive: a symptom the user logged today fires its cards ("logged").
@@ -19,7 +19,7 @@ import numpy as np
 
 PHASES = ("Menstrual", "Follicular", "Fertility", "Luteal", "Unknown")
 TARGETS = ("fatigue", "cramps", "bloating", "cravings", "unstable_glucose")
-RISK_THRESHOLD = 0.5  # provisional: Madhav to set from the headline model's calibration
+RISK_THRESHOLD = 0.5  # confirmed Nov 22 from Step 2 calibration (docs/step2_results.md)
 PHASE_TARGETS = {"Menstrual": "menses", "Luteal": "luteal"}
 
 

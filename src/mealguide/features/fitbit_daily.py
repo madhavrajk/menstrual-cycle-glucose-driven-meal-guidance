@@ -9,7 +9,13 @@ Overnight signals (nighttime HR, HRV, skin temperature) belong to the day the ni
 matching `sleep_daily`: last night's values are today's features, known by this morning.
 Each physiological signal also gets a `_dev` column, today's value minus the person's own
 mean over the previous 28 days (`features/rolling.py`), because people differ far more from
-each other than across their own cycle.
+each other than across their own cycle. (Sleep, efficiency, and steps get theirs in
+`models/configs.py`.)
+
+Checked on real data (Nov 22): sleep timestamps are HH:MM:SS clock times (0% unparseable),
+and the main-sleep window median, 472 min, equals Fitbit's own `timeinbed` median. 82% of
+HRV readings fall between 22:00 and 08:00 and 5.4% after noon, so the noon split in
+`hrv_from` is right. `nightly_temperature` is in °C (median 33.9, range 25.7-36.4).
 """
 
 import pandas as pd
@@ -108,8 +114,8 @@ def night_hr_daily(synthetic: bool = False) -> pd.DataFrame:
 
 def hrv_from(h: pd.DataFrame) -> pd.DataFrame:
     """Nightly mean RMSSD. Fitbit records HRV during sleep, so a reading from noon onward
-    belongs to the night that ends the next day. (Check on real data: if most readings sit
-    between 22:00 and 08:00, this split is right.)"""
+    belongs to the night that ends the next day. (Real data: 82% of readings fall between
+    22:00 and 08:00, and 5.4% after noon.)"""
     h = h[h["rmssd"] > 0]
     after_noon = time_of_day(h["timestamp"]).dt.total_seconds() >= 12 * 3600
     h = h.assign(day_in_study=h["day_in_study"] + after_noon.astype(int))

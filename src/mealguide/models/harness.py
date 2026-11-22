@@ -3,13 +3,21 @@
 Every model and baseline produces one out-of-fold score per row. `evaluate` pools them and
 reports AUROC and AUPRC. CIs resample participants, not days, because days from the same
 person are correlated.
+
+It also reports **within-person AUROC**: AUROC computed separately for each participant who
+has both outcomes, then averaged with equal weight per person. Pooled AUROC mostly ranks
+people against each other (who has more symptom days); within-person AUROC asks whether the
+score tracks one person's day-to-day changes, which is what a next-day forecast is for.
+It's also immune to a LOSO artifact: with weak features a model's score is mostly its
+training intercept, which is lowest exactly when the held-out person has the highest rate,
+so pooled AUROC can fall well below 0.5 even when no feature is anti-predictive.
 """
 
 from collections.abc import Callable
 
 import numpy as np
 import pandas as pd
-from sklearn.metrics import average_precision_score, roc_auc_score
+from sklearn.metrics import average_precision_score, brier_score_loss, roc_auc_score
 from sklearn.model_selection import LeaveOneGroupOut
 
 METRICS = {"auroc": roc_auc_score, "auprc": average_precision_score}
@@ -30,6 +38,28 @@ def _bootstrap(y, score, groups, n_boot, seed):
             for name, v in draws.items()}
 
 
+def within_person_auroc(y, score, groups) -> np.ndarray:
+    """One AUROC per participant who has both outcomes."""
+    out = []
+    for g in np.unique(groups):
+        rows = groups == g
+        if len(np.unique(y[rows])) == 2:
+            out.append(roc_auc_score(y[rows], score[rows]))
+    return np.array(out)
+
+
+def _within(y, score, groups, n_boot, seed) -> dict:
+    per_person = within_person_auroc(y, score, groups)
+    if not len(per_person):
+        return {"auroc_within": np.nan, "auroc_within_lo": np.nan,
+                "auroc_within_hi": np.nan, "n_within": 0}
+    rng = np.random.default_rng(seed)
+    boot = rng.choice(per_person, (n_boot, len(per_person))).mean(axis=1)
+    lo, hi = np.percentile(boot, [2.5, 97.5])
+    return {"auroc_within": per_person.mean(), "auroc_within_lo": lo,
+            "auroc_within_hi": hi, "n_within": len(per_person)}
+
+
 def evaluate(df: pd.DataFrame, y_col: str, score_col: str, group_col: str = "id",
              n_boot: int = 1000, seed: int = 6998) -> dict:
     d = df.dropna(subset=[y_col, score_col])
@@ -44,6 +74,10 @@ def evaluate(df: pd.DataFrame, y_col: str, score_col: str, group_col: str = "id"
     for name, fn in METRICS.items():
         out[name] = fn(y, score)
         out[f"{name}_lo"], out[f"{name}_hi"] = cis[name]
+    out |= _within(y, score, groups, n_boot, seed)
+    if ((score >= 0) & (score <= 1)).all():  # probabilities only, not raw scores
+        out["brier"] = brier_score_loss(y, score)
+        out["mean_pred"] = score.mean()
     return out
 
 

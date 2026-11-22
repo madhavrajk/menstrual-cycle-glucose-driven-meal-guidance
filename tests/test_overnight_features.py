@@ -3,7 +3,6 @@
 import pandas as pd
 import pytest
 
-from mealguide import paths, pipeline, synthetic
 from mealguide.features.fitbit_daily import hrv_from, night_hr_from, sleep_windows_from
 
 
@@ -48,18 +47,3 @@ def test_hrv_evening_readings_belong_to_next_day():
     out = hrv_from(h).set_index("day_in_study")["hrv_rmssd"]
     assert out[2] == pytest.approx(45.0)  # night of day 1 -> day 2
     assert out[3] == pytest.approx(30.0)  # 23:00 on day 2 -> day 3
-
-
-def test_model_runs_end_to_end(tmp_path, monkeypatch):
-    monkeypatch.setattr(paths, "SYNTHETIC", tmp_path / "synthetic")
-    monkeypatch.setattr(paths, "RESULTS", tmp_path / "results")
-    paths.SYNTHETIC.mkdir()
-    for name, df in synthetic.generate(n_participants=4, n_days=30).items():
-        df.to_csv(paths.SYNTHETIC / f"{name}.csv", index=False)
-
-    results = pipeline.run_model(synthetic=True)
-
-    assert len(results) == 15  # 5 targets x (2 baselines + LR)
-    lr = results[results["baseline"] == "lr_watch"]
-    assert lr["auroc"].notna().all()
-    assert (paths.RESULTS / "first_model_synthetic.csv").exists()

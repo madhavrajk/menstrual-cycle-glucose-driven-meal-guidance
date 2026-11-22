@@ -1,0 +1,12 @@
+{
+  "model": "lr",
+  "symptom_config": "watch",
+  "glucose_config": "watch+phase+glucose",
+  "mean_within_auroc_symptoms": 0.6612,
+  "candidates": {
+    "lgbm:watch": 0.6455,
+    "lgbm:watch+phase": 0.6459,
+    "lr:watch+phase": 0.661,
+    "lr:watch": 0.6612
+  }
+}
